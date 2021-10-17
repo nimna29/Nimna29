@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Nimna Niwarthana</h1>
-<h3 align="center">A passionate BSc(Hons) Computer Security | Undergraduate Student | NSBM Green University | University of Plymouth - UKfrontend developer from India</h3>
+<h3 align="center">A passionate BSc(Hons) Computer Security | Undergraduate Student | NSBM Green University | University of Plymouth - UK</h3>
 
 - 🌱 I’m currently learning **Java, Python, AI and Machine Learning**
 
