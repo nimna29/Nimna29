@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **C#, Java, Python, AI and Machine Learning**
 
-- 📝 I regularly write articles on [https://www.slcyberdesigns.com/](https://www.slcyberdesigns.com/)
+- 📝 This is my website [https://www.slcyberdesigns.com/](https://www.slcyberdesigns.com/)
 
 - 📫 How to reach me **niwarthananimna@gmail.com**
 
