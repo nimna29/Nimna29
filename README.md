@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Nimna Niwarthana</h1>
 <h3 align="center">Undergraduate Student | NSBM Green University | University of Plymouth - UK</h3>
 
-- 🌱 I’m currently learning **C#, Java, Python, AI and Machine Learning, Flutter, C++**
+- 🌱 I’m currently learning **, Computer Security, C#, Python, AI and Machine Learning, Flutter**
 
 - 📝 This is my website [https://www.slcyberdesigns.com/](https://www.slcyberdesigns.com/)
 
