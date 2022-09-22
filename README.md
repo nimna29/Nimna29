@@ -5,7 +5,7 @@
 
 - 📝 This is my website [https://www.slcyberdesigns.com/](https://www.slcyberdesigns.com/)
 
-- 📫 How to reach me **niwarthananimna@gmail.com**
+- 📫 How to reach me **nimnaniwarthanaofficial@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
