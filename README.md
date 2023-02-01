@@ -13,6 +13,8 @@
 <a href="https://linkedin.com/in/nimna niwarthana" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nimna niwarthana" height="30" width="40" /></a>
 <a href="https://fb.com/nimna niwarthana" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="nimna niwarthana" height="30" width="40" /></a>
 <a href="https://instagram.com/nimna_niwarthana" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="nimna_niwarthana" height="30" width="40" /></a>
+
+<img src="https://user-images.githubusercontent.com/77341013/216081933-7caa5732-4490-44ce-acf4-2e7a46bd7d68.png" alt="xd" width="40" height="40"/>
 </p>
 
 <h3 align="left">Support:</h3>
