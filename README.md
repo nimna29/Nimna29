@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Nimna Niwarthana</h1>
 <h3 align="center">Undergraduate Student | NSBM Green University | University of Plymouth - UK</h3>
 
-- 🌱 I’m currently learning **Python, IoT, Linux, Cybersecurity, Networking, AI / Machine Learning, Mobile App Development, Cloud Platforms, and Scripting.**
+- 🌱 I’m currently learning: **Python, IoT, Linux, Cybersecurity, Networking, AI / Machine Learning, Mobile App Development, Cloud Platforms, and Scripting.**
 
-- 📝 I regularly write articles on [https://www.slcyberdesigns.com/](https://www.slcyberdesigns.com/)
+- 📝 My website: [https://www.slcyberdesigns.com/](https://www.slcyberdesigns.com/)
 
-- 📫 How to reach me **nimnaniwarthanaofficial@gmail.com**
+- 📫 How to reach me: **nimnaniwarthanaofficial@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
