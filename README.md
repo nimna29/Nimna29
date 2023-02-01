@@ -15,13 +15,12 @@
 <a href="https://instagram.com/nimna_niwarthana" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="nimna_niwarthana" height="30" width="40" /></a>
 </p>
 
-<br>
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nimna29&show_icons=true&locale=en&layout=compact" alt="nimna29" /></p><br>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=nimna29&show_icons=true&locale=en" alt="nimna29" /></p><br>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nimna29&" alt="nimna29" /></p><br>
-
 <h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/nimna"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="nimna" /></a></p>
+<p><a href="https://www.buymeacoffee.com/nimna"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="nimna" /></a></p><br><br><br>
+
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nimna29&show_icons=true&theme=dracula&locale=en&layout=compact" alt="nimna29" /></p>
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=nimna29&show_icons=true&theme=dracula&locale=en" alt="nimna29" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nimna29&theme=dark" alt="nimna29" /></p>
+
