@@ -20,20 +20,6 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nimna29&show_icons=true&theme=dracula&locale=en&layout=compact" alt="nimna29" /></p>
 
-
-
-
-
-
-
 <p>&nbsp;<img align="left" src="https://github-readme-stats.vercel.app/api?username=nimna29&show_icons=true&theme=dracula&locale=en" alt="nimna29" /></p>
 
-
-
-
-
-
 <p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=nimna29&theme=dark" alt="nimna29" /></p>
-
-
-
