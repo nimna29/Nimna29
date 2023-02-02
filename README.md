@@ -18,8 +18,8 @@
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/nimna"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="nimna" /></a></p><br><br><br>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nimna29&show_icons=true&theme=dracula&locale=en&layout=detailed" alt="nimna29" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nimna29&show_icons=true&theme=dracula&locale=en&layout=detailed" alt="nimna29" />
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api?username=nimna29&show_icons=true&theme=dracula&locale=en" alt="nimna29" /></p>
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=nimna29&show_icons=true&theme=dracula&locale=en" alt="nimna29" /></p>
 
 <p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=nimna29&theme=dark" alt="nimna29" /></p>
