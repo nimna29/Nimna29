@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Nimna Niwarthana</h1>
-<h3 align="center">Undergraduate Student | NSBM Green University | University of Plymouth - UK</h3>
+<h3 align="center">Undergraduate Student | NSBM Green University - SL | University of Plymouth - UK</h3>
 
 - 🌱 I’m currently learning: **Python, IoT, Linux, Cybersecurity, Networking, AI / Machine Learning, Mobile App Development, Cloud Platforms, and Scripting.**
 
