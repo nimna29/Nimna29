@@ -7,7 +7,7 @@
 
 <p align="center"> - 📫 How to reach me: <b>nimnaniwarthanaofficial@gmail.com</b> </p>
 
-<p align="center"> 📄 Know about my experiences [https://www.linkedin.com/in/nimna-niwarthana-4b7357207] </p>
+<p align="center"> -📄 Know about my experiences [https://www.linkedin.com/in/nimna-niwarthana-4b7357207] </p>
 
 <br>
 <a href="https://www.youtube.com/watch?v=KQBVOQ79G2s"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
