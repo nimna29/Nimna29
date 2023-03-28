@@ -3,7 +3,7 @@
 
 <p align="center"> - 🌱 I’m currently learning: **Python, IoT, Linux, Cybersecurity, Networking, AI / Machine Learning, Mobile App Development, Cloud Platforms, and Scripting.** </p>
 
-<p align="center"> - 📝 My website: [https://www.slcyberdesigns.com/](https://www.slcyberdesigns.com/) </p>
+<p align="center"> - 📝 My website: [https://www.slcyberdesigns.com/] </p>
 
 <p align="center"> - 📫 How to reach me: **nimnaniwarthanaofficial@gmail.com** </p>
 
