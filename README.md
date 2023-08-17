@@ -62,7 +62,7 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nimna29&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact" alt="nimna29"/>
 </div><br>
 
-<a href="https://www.youtube.com/watch?v=KQBVOQ79G2s"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+<a href="https://www.youtube.com/watch?v=lfucQM07tGQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 <br>
 
 
