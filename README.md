@@ -16,10 +16,10 @@
 <h3 align="center">Connect with me:</h3>
 <p align="center">
 <a href="https://www.linkedin.com/in/nimna-niwarthana/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nimna-niwarthana" height="30" width="40" /></a>
-<a href="https://twitter.com/niwarthananimna" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="niwarthananimna" height="30" width="40" /></a>
 <a href="https://www.facebook.com/nimna.niwarthana.1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="nimna.niwarthana" height="30" width="40" /></a>
 <a href="https://www.instagram.com/nimna_niwarthana/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="nimna_niwarthana" height="30" width="40" /></a>
 <a href="https://medium.com/@nimnaniwarthanaofficial" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@nimnaniwarthanaofficial" height="30" width="40" /></a>
+<a href="https://twitter.com/niwarthananimna" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="niwarthananimna" height="30" width="40" /></a>
 </p>
 <br>
 
