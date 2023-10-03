@@ -3,11 +3,9 @@
 
 <p align="center"> - 🌱 My skills contain a wide range of areas, including Python, React, Flutter, Web Development, IoT, Automation, and C & C#. I also have experience in video editing and graphic design. In addition to these, I am continuously working to enhance my knowledge in Linux, Cybersecurity, Networking, AI/Machine Learning, Python, React, IoT, Automation, Web/Mobile App Development, and various Cloud Platforms.</b> </p>
 
-<p align="center"> - 📝 My website: [https://nimna29.github.io/nimna-niwarthana] </p>
+<h4 align="center"> 🌐 <a href="https://nimna29.github.io/nimna-niwarthana"> My Website</a></h4>
 
-<p align="center"> - 📫 How to reach me: <b>nimnaniwarthanaofficial@gmail.com</b> </p>
-
-<p align="center"> -📄 Know about my experiences [https://www.linkedin.com/in/nimna-niwarthana] </p>
+<h4 align="center"> 📄 <a href="https://www.linkedin.com/in/nimna-niwarthana"> Know About My Experiences </a></h4>
 
 <br>
 <a href="https://www.youtube.com/watch?v=KQBVOQ79G2s"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
