@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Nimna Niwarthana</h1>
-<h3 align="center">Undergraduate Student | NSBM Green University - LK | University of Plymouth - UK</h3>
+<h3 align="center">BSc (Hons) Computer Security | NSBM Green University - LK | University of Plymouth - UK</h3>
 
 <p align="center"> 🌱 My skills contain a wide range of areas, including Python, React, Flutter, Web Development, IoT, Automation, and C & C#. I also have experience in video editing and graphic design. In addition to these, I am continuously working to enhance my knowledge in Linux, Cybersecurity, Networking, AI/Machine Learning, Python, React, IoT, Automation, Web/Mobile App Development, and various Cloud Platforms.</b> </p>
 
