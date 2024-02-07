@@ -20,6 +20,12 @@
 </div>
 <br>
 
+<div align="center"> 
+    <img width="90%" src="https://github.com/nimna29/Nimna29/assets/77341013/eb688b76-0f7d-436e-8fe2-3869f839c756" />
+</div>
+
+<br>
+
 <a href="https://www.youtube.com/watch?v=KQBVOQ79G2s"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 <h2 align="center">👨‍💻 Connect with me 📲</h2>
