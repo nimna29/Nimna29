@@ -4,9 +4,20 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Rowdies&size=35&color=1091F7&center=true&vCenter=true&width=500&height=70&duration=4000&lines=😎+Hello+World!+👋;+I'm+Nimna+Niwarthana;" />
 </h1>
 
-<h3 align="center">BSc (Hons) Computer Security | NSBM Green University - LK | University of Plymouth - UK</h3>
+<h3 align="center">BSc (Hons) Computer Security | Cyber Security Enthusiast | ML Development Enthusiast</h3>
+<br>
 
-<p align="center"> 🌱 My skills contain a wide range of areas, including Python, React, Flutter, Web Development, IoT, Automation, and C & C#. I also have experience in video editing and graphic design. In addition to these, I am continuously working to enhance my knowledge in Linux, Cybersecurity, Networking, AI/Machine Learning, Python, React, IoT, Automation, Web/Mobile App Development, and various Cloud Platforms.</br> </p>
+<div align="center">
+
+🔭 I’m currently working on **a ML Project**
+
+🌱 I’m currently learning **Cybersecurity, Networking, Linux, AI/Machine Learning**
+
+💬 Ask me about **Python, React, Web Development, IoT, Automation, Cyber Security, Machine Learning, and more**
+
+⚡ Fun fact **Dark mode not only eases eye strain in low light but also deters bugs, as they are attracted to light**
+
+</div>
 
 <h4 align="center"> 🌐 <a href="https://nimna29.github.io/nimna-niwarthana"> My Website</a></h4>
 
