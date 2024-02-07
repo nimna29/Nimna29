@@ -1,4 +1,9 @@
-<h1 align="center">Hi 👋, I'm Nimna Niwarthana</h1>
+<img align="right" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnimna29&labelColor=%23697689&countColor=%232ccce4&style=flat" />
+
+<h1 align="center">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Rowdies&size=35&color=1091F7&center=true&vCenter=true&width=500&height=70&duration=4000&lines=😎+Hello+World!+👋;+I'm+Nimna+Niwarthana;" />
+</h1>
+
 <h3 align="center">BSc (Hons) Computer Security | NSBM Green University - LK | University of Plymouth - UK</h3>
 
 <p align="center"> 🌱 My skills contain a wide range of areas, including Python, React, Flutter, Web Development, IoT, Automation, and C & C#. I also have experience in video editing and graphic design. In addition to these, I am continuously working to enhance my knowledge in Linux, Cybersecurity, Networking, AI/Machine Learning, Python, React, IoT, Automation, Web/Mobile App Development, and various Cloud Platforms.</br> </p>
@@ -21,7 +26,7 @@
 </p>
 <br>
 
-<h3 align="center">Languages and Tools:</h3>
+<h3 align="center">⚒️ Languages and Tools ⚙️</h3>
 <p align="center">
     <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> 
   <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a>
