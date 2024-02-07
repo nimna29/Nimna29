@@ -21,7 +21,7 @@
 <br>
 
 <div align="center"> 
-    <img width="90%" src="https://github.com/nimna29/Nimna29/assets/77341013/eb688b76-0f7d-436e-8fe2-3869f839c756" />
+    <img width="92%" src="https://github.com/nimna29/Nimna29/assets/77341013/eb688b76-0f7d-436e-8fe2-3869f839c756" />
 </div>
 
 <br>
