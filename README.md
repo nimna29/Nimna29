@@ -13,7 +13,7 @@
 
 🌱 I’m currently learning **Cybersecurity, Networking, Linux, AI/Machine Learning**
 
-💬 Ask me about **Python, React, Web Development, IoT, Automation, Cyber Security, Machine Learning, and more**
+💬 Ask me about **Python, React, Web Development, IoT, Automation, Cyber Security, Machine Learning, and more tech stuff**
 
 ⚡ Fun fact **Dark mode not only eases eye strain in low light but also deters bugs, as they are attracted to light**
 
