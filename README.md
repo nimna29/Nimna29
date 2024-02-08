@@ -53,16 +53,10 @@
 
 
 <h2 align="center">⚒️ Languages and Tools ⚙️</h2>
-<div align="center">
-  <a href="https://skillicons.dev">
+<div align="center" style="pointer-events: none;">
     <img src="https://skillicons.dev/icons?i=py,typescript,javascript,c,cs,bash,html,css,php,arduino,dart&theme=dark" />
-  </a>
-  <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=fastapi,django,react,nodejs,flutter,firebase,mongodb,heroku,anaconda,docker&theme=dark" />
-  </a>
-  <a>
     <img src="https://skillicons.dev/icons?i=linux,tensorflow,sklearn,opencv,pytorch,git,vscode,vim,wordpress,figma,ps,ai&theme=dark" />
-  </a>
 </div>
 <br>
 
@@ -80,7 +74,6 @@
 
 <a href="https://www.youtube.com/watch?v=lfucQM07tGQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
 
-<br>
 
 <h2 align="center">👨‍💻 My Contributions 🌏</h2>
 
