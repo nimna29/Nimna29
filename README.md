@@ -39,7 +39,7 @@
   </a>
   
   <a href="https://nimna29.github.io/nimna-niwarthana" target="_blank">
-     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&color=0384fc&logo=todoist&logoColor=white" target="_blank" /> <!-- sqlite, safari, google-chrome are other good icon options -->
+     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&color=0384fc&logo=todoist&logoColor=white" target="_blank" />
   </a>
 </div>
 
@@ -77,7 +77,10 @@
 </div>
 <br>
 
-<a href="https://www.youtube.com/watch?v=lfucQM07tGQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" target="_blank"></a>
+<a href="https://www.youtube.com/watch?v=lfucQM07tGQ" target="_blank">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Animation">
+</a>
+
 <br>
 
 <h2 align="center">👨‍💻 My Contributions 🌏</h2>
