@@ -1,7 +1,7 @@
 <img align="right" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnimna29&labelColor=%23697689&countColor=%232ccce4&style=flat" />
 
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Rowdies&size=36&color=1091F7&center=true&vCenter=true&width=500&height=70&duration=4000&lines=😎+Hello+World!+👋;+I'm+Nimna+Niwarthana;" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Kanit&weight=600&size=36&color=1091F7&center=true&vCenter=true&width=500&height=70&duration=4000&lines=😎+Hello+World!+👋;+I'm+Nimna+Niwarthana;" />
 </h1>
 
 <h3 align="center">BSc (Hons) Computer Security | Cyber Security Enthusiast | ML Development Enthusiast</h3>
