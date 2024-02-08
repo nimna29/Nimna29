@@ -77,7 +77,7 @@
 </div>
 <br>
 
-<a href="https://www.youtube.com/watch?v=lfucQM07tGQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+<a href="https://www.youtube.com/watch?v=lfucQM07tGQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" target="_blank"></a>
 <br>
 
 <h2 align="center">👨‍💻 My Contributions 🌏</h2>
