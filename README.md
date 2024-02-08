@@ -53,7 +53,7 @@
 
 
 <h2 align="center">⚒️ Languages and Tools ⚙️</h2>
-<div align="center" style="pointer-events: none;">
+<div align="center">
     <img src="https://skillicons.dev/icons?i=py,typescript,javascript,c,cs,bash,html,css,php,arduino,dart&theme=dark" />
     <img src="https://skillicons.dev/icons?i=fastapi,django,react,nodejs,flutter,firebase,mongodb,heroku,anaconda,docker&theme=dark" />
     <img src="https://skillicons.dev/icons?i=linux,tensorflow,sklearn,opencv,pytorch,git,vscode,vim,wordpress,figma,ps,ai&theme=dark" />
