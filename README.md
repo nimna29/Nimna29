@@ -26,27 +26,27 @@
 
 <br>
 
-<a href="https://www.youtube.com/watch?v=KQBVOQ79G2s"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+<a href="https://www.youtube.com/watch?v=KQBVOQ79G2s"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
 
 <h2 align="center">👨‍💻 Connect with me 📲</h2>
 <div align="center"> 
-  <a href="https://www.linkedin.com/in/nimna-niwarthana" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
+  <a href="https://www.linkedin.com/in/nimna-niwarthana">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
     
   <a href="https://twitter.com/niwarthananimna">
     <img src="https://img.shields.io/badge/Twitter-black?style=for-the-badge&logo=X" />
   </a>
   
-  <a href="https://nimna29.github.io/nimna-niwarthana" target="_blank">
-     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&color=0384fc&logo=todoist&logoColor=white" target="_blank" />
+  <a href="https://nimna29.github.io/nimna-niwarthana">
+     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&color=0384fc&logo=todoist&logoColor=white"/>
   </a>
 </div>
 
 <br>
 
 <div align="center">
-    <a href="https://www.buymeacoffee.com/nimna"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="34" width="130" alt="nimna" /></a><br>
+    <a href="https://www.buymeacoffee.com/nimna"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="34" width="130" alt="buymeacoffee.com/nimna" /></a><br>
 </div>
 
 <br>
@@ -54,13 +54,13 @@
 
 <h2 align="center">⚒️ Languages and Tools ⚙️</h2>
 <div align="center">
-  <a href="https://skillicons.dev" target="_blank">
+  <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=py,typescript,javascript,c,cs,bash,html,css,php,arduino,dart&theme=dark" />
   </a>
-  <a href="https://skillicons.dev" target="_blank">
+  <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=fastapi,django,react,nodejs,flutter,firebase,mongodb,heroku,anaconda,docker&theme=dark" />
   </a>
-  <a href="https://skillicons.dev" target="_blank">
+  <a>
     <img src="https://skillicons.dev/icons?i=linux,tensorflow,sklearn,opencv,pytorch,git,vscode,vim,wordpress,figma,ps,ai&theme=dark" />
   </a>
 </div>
@@ -68,7 +68,7 @@
 
 <h2 align="center">🔥 My Stats ⚡</h2>
 <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nimna29&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact" alt="nimna29"/>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nimna29&langs_count=8&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&card_width=380px" alt="nimna29"/>
 </div>
 <br>
 
@@ -77,9 +77,8 @@
 </div>
 <br>
 
-<a href="https://www.youtube.com/watch?v=lfucQM07tGQ" target="_blank">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Animation">
-</a>
+
+<a href="https://www.youtube.com/watch?v=lfucQM07tGQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
 
 <br>
 
