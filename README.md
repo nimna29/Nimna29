@@ -87,8 +87,9 @@
     <h2></h2>
 </div>
 
+<br>
 <div align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy"><br><img src="https://github-profile-trophy.vercel.app/?username=nimna29&theme=tokyonight&margin-h=15&margin-w=5&no-bg=true" alt="nimna29" /></a>
+    <img src="https://github-profile-trophy.vercel.app/?username=nimna29&theme=tokyonight&margin-h=15&margin-w=5&no-bg=true" alt="nimna29" />
 </div>
 <br>
 
