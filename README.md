@@ -26,7 +26,7 @@
 
 <br>
 
-<a href="https://www.youtube.com/watch?v=KQBVOQ79G2s"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
+<a href="https://www.youtube.com/watch?v=C3iHAgwIYtI"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
 
 <h2 align="center">👨‍💻 Connect with me 📲</h2>
 <div align="center"> 
@@ -80,11 +80,16 @@
 <div align="center">
     <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nimna29&show_icons=true&theme=tokyonight&hide_border=true" alt="nimna29" />
 </div>
-<br>
 
+<div align="center">
+    <h2></h2>
+    <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/nimna29/Nimna29/output/github-contribution-grid-snake-dark.svg" />
+    <h2></h2>
+</div>
 
 <div align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy"><br><img src="https://github-profile-trophy.vercel.app/?username=nimna29&theme=tokyonight&margin-h=15&margin-w=5&no-bg=true" alt="nimna29" /></a>
 </div>
 <br>
 
+<a href="https://www.youtube.com/watch?v=cpraXaw7dyc"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
