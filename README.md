@@ -4,7 +4,7 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Kanit&weight=600&size=36&color=1091F7&center=true&vCenter=true&width=500&height=70&duration=4000&lines=😎+Hello+World!+👋;+I'm+Nimna+Niwarthana;" />
 </h1>
 
-<h3 align="center">BSc (Hons) Computer Security | Cyber Security Enthusiast | ML Development Enthusiast</h3>
+<h3 align="center">BSc (Hons) Computer Security | ML Development Enthusiast | Cyber Security Enthusiast</h3>
 <br>
 
 <div align="center">
