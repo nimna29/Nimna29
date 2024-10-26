@@ -11,9 +11,9 @@
 
 🔭 I’m currently working on **a ML Project**
 
-🌱 I’m currently learning **Cybersecurity, Networking, Linux, AI/Machine Learning**
+🌱 I’m currently learning **AI/ML, Backend Development, Data Engineering, Web Development, Cloud Platforms**
 
-💬 Ask me about **Python, React, Web Development, IoT, Automation, Cyber Security, Machine Learning, and more tech stuff**
+💬 Ask me about **Python, AI/ML, React, Web Development, IoT, Automation, Cyber Security, Cloud Platforms, and more tech stuff**
 
 ⚡ Fun fact **Dark mode not only eases eye strain in low light but also deters bugs, as they are attracted to light**
 
