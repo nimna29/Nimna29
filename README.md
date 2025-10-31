@@ -11,7 +11,7 @@
 
 🔭 I’m currently working on **a ML Project**
 
-🌱 I’m currently learning **AI/ML, Backend Development, Data Engineering, Web Development, Cloud Platforms**
+🌱 I’m currently learning **Cyber Security, AI/ML, Backend Development, Web Development, Cloud Platforms**
 
 💬 Ask me about **Python, AI/ML, React, Web Development, IoT, Automation, Cyber Security, Cloud Platforms, and more tech stuff**
 
