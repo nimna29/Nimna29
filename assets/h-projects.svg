@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="64" viewBox="0 0 1200 64" role="img">
+<title>FEATURED MISSIONS</title>
+<defs>
+  <linearGradient id="h-projects-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#05071A"/><stop offset="1" stop-color="#0B1033"/>
+  </linearGradient>
+  <linearGradient id="h-projects-edge" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#A78BFA"/><stop offset="1" stop-color="#F472B6"/>
+  </linearGradient>
+  <radialGradient id="h-projects-nebA" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#A78BFA" stop-opacity=".35"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="h-projects-nebB" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#22D3EE" stop-opacity=".22"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="h-projects-nebC" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#F472B6" stop-opacity=".18"/><stop offset="1" stop-color="#F472B6" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="h-projects-clip"><rect x="1" y="1" width="1198" height="62" rx="14"/></clipPath>
+</defs>
+<style>
+  .mono { font-family: 'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Liberation Mono','DejaVu Sans Mono',monospace; }
+  .sans { font-family: 'Segoe UI','Inter',Ubuntu,'Helvetica Neue',Arial,'DejaVu Sans',sans-serif; }
+  .tw { animation: tw 4s ease-in-out infinite; }
+  @keyframes tw { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect x="1" y="1" width="1198" height="62" rx="14" fill="url(#h-projects-bg)"/>
+  <g clip-path="url(#h-projects-clip)">
+    
+    <circle cx="597.0" cy="17.0" r="1.2" fill="#A78BFA" opacity="0.70"/>
+    <circle class="tw" cx="396.1" cy="34.5" r="0.6" fill="#22D3EE" style="animation-delay:3.30s;animation-duration:5.93s"/>
+    <circle cx="383.2" cy="12.1" r="1.5" fill="#E6EDF3" opacity="0.64"/>
+    <circle cx="762.0" cy="58.6" r="0.5" fill="#22D3EE" opacity="0.79"/>
+    <circle cx="771.7" cy="27.5" r="0.6" fill="#E6EDF3" opacity="0.77"/>
+    <circle cx="1181.0" cy="12.9" r="0.8" fill="#E6EDF3" opacity="0.70"/>
+    <circle cx="323.6" cy="13.4" r="1.0" fill="#E6EDF3" opacity="0.69"/>
+    <circle cx="1157.5" cy="7.5" r="1.2" fill="#A78BFA" opacity="0.60"/>
+    <circle cx="621.0" cy="34.0" r="1.2" fill="#E6EDF3" opacity="0.62"/>
+    <circle cx="111.8" cy="23.5" r="1.0" fill="#E6EDF3" opacity="0.48"/>
+    <circle cx="817.1" cy="30.3" r="1.5" fill="#A78BFA" opacity="0.79"/>
+    <circle cx="269.0" cy="46.5" r="0.5" fill="#A78BFA" opacity="0.42"/>
+    <circle class="tw" cx="403.1" cy="40.5" r="0.5" fill="#F472B6" style="animation-delay:3.71s;animation-duration:4.35s"/>
+    <circle class="tw" cx="558.1" cy="26.8" r="1.5" fill="#E6EDF3" style="animation-delay:0.21s;animation-duration:5.23s"/>
+    <circle cx="81.0" cy="42.7" r="1.0" fill="#E6EDF3" opacity="0.46"/>
+    <circle class="tw" cx="773.9" cy="33.2" r="0.8" fill="#E6EDF3" style="animation-delay:3.95s;animation-duration:4.81s"/>
+    <circle cx="13.5" cy="8.5" r="0.6" fill="#E6EDF3" opacity="0.70"/>
+    <circle cx="426.6" cy="11.4" r="0.5" fill="#E6EDF3" opacity="0.83"/>
+    <circle class="tw" cx="837.0" cy="1.7" r="0.8" fill="#E6EDF3" style="animation-delay:3.42s;animation-duration:4.33s"/>
+    <circle cx="339.8" cy="41.6" r="0.8" fill="#E6EDF3" opacity="0.34"/>
+    <circle cx="1167.2" cy="18.2" r="1.5" fill="#E6EDF3" opacity="0.80"/>
+    <circle class="tw" cx="306.5" cy="32.9" r="0.5" fill="#E6EDF3" style="animation-delay:2.51s;animation-duration:5.54s"/>
+    <circle cx="300.3" cy="50.2" r="1.0" fill="#E6EDF3" opacity="0.76"/>
+    <circle cx="688.2" cy="61.4" r="0.6" fill="#E6EDF3" opacity="0.41"/>
+    <circle class="tw" cx="597.8" cy="15.5" r="1.2" fill="#E6EDF3" style="animation-delay:1.13s;animation-duration:5.73s"/>
+    <circle cx="964.3" cy="42.7" r="0.6" fill="#E6EDF3" opacity="0.74"/>
+    <circle cx="629.8" cy="31.7" r="0.6" fill="#E6EDF3" opacity="0.75"/>
+    <circle cx="36.7" cy="12.3" r="0.8" fill="#E6EDF3" opacity="0.69"/>
+    <circle class="tw" cx="1129.6" cy="52.1" r="0.5" fill="#E6EDF3" style="animation-delay:0.78s;animation-duration:2.81s"/>
+    <circle cx="174.9" cy="45.1" r="0.8" fill="#E6EDF3" opacity="0.72"/>
+    <circle cx="205.2" cy="53.9" r="1.0" fill="#E6EDF3" opacity="0.86"/>
+    <circle cx="432.2" cy="39.9" r="0.5" fill="#E6EDF3" opacity="0.56"/>
+    <circle cx="935.6" cy="33.6" r="0.8" fill="#E6EDF3" opacity="0.66"/>
+    <circle class="tw" cx="659.2" cy="55.2" r="1.5" fill="#22D3EE" style="animation-delay:0.62s;animation-duration:2.53s"/>
+    <circle cx="347.8" cy="61.2" r="1.0" fill="#22D3EE" opacity="0.50"/>
+    <circle cx="726.1" cy="33.8" r="1.0" fill="#E6EDF3" opacity="0.59"/>
+    <circle cx="328.2" cy="43.3" r="0.7" fill="#E6EDF3" opacity="0.45"/>
+    <circle cx="185.6" cy="6.9" r="1.2" fill="#22D3EE" opacity="0.77"/>
+    <circle class="tw" cx="1068.3" cy="27.6" r="0.8" fill="#E6EDF3" style="animation-delay:2.30s;animation-duration:5.26s"/>
+    <circle cx="1001.3" cy="29.1" r="0.7" fill="#E6EDF3" opacity="0.41"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="62" rx="14" fill="none" stroke="#1E2A5A" stroke-width="1.5"/>
+  <g fill="none" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="square">
+    <path d="M8 22 V8 H22"/>
+    <path d="M1178 8 H1192 V22"/>
+    <path d="M1192 42 V56 H1178"/>
+    <path d="M22 56 H8 V42"/>
+  </g>
+  <defs><linearGradient id="h-projects-fade" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE" stop-opacity=".8"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></linearGradient></defs>
+  <text x="34" y="40" class="mono" font-size="17" fill="#22D3EE">//03</text>
+  <text x="96" y="41.5" class="sans" font-size="24" font-weight="800" letter-spacing="4" fill="#E6EDF3">FEATURED MISSIONS</text>
+  <path d="M433 28 l6 4 -6 4" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+  <line x1="449" y1="32" x2="1150" y2="32" stroke="url(#h-projects-fade)" stroke-width="1.5"/>
+  <circle class="tw" cx="1164" cy="32" r="4" fill="#F472B6"/>
+</svg>

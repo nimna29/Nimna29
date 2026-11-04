@@ -1,96 +1,65 @@
-<img align="right" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnimna29&labelColor=%23697689&countColor=%232ccce4&style=flat" />
-
-<h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Kanit&weight=600&size=36&color=1091F7&center=true&vCenter=true&width=500&height=70&duration=4000&lines=😎+Hello+World!+👋;+I'm+Nimna+Niwarthana;" />
-</h1>
-
-<h3 align="center">Software Engineer | AI/ML Developer | Cyber Security Enthusiast | BSc (Hons) Computer Security</h3>
-<br>
-
 <div align="center">
 
-🔭 I’m currently working on **a ML Project**
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<a href="https://nimna-niwarthana.com"><img src="assets/hero.svg" width="100%" alt="Nimna Niwarthana — Software Engineer · AI/ML Developer · Cybersecurity Specialist" /></a>
 
-🌱 I’m currently learning **Cyber Security, AI/ML, Backend Development, Web Development, Cloud Platforms**
+<a href="https://nimna-niwarthana.com"><img src="assets/btn-portfolio.svg" height="50" alt="Portfolio — nimna-niwarthana.com" /></a>
+<a href="https://www.linkedin.com/in/nimna-niwarthana"><img src="assets/btn-linkedin.svg" height="50" alt="LinkedIn" /></a>
+<a href="https://twitter.com/niwarthananimna"><img src="assets/btn-x.svg" height="50" alt="X / Twitter" /></a>
+<a href="https://www.buymeacoffee.com/nimna"><img src="assets/btn-coffee.svg" height="50" alt="Buy me a coffee" /></a>
 
-💬 Ask me about **Python, AI/ML, React, Web Development, IoT, Automation, Cyber Security, Cloud Platforms, and more tech stuff**
+<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnimna29&label=VISITORS%20IN%20ORBIT&labelColor=%230B1033&countColor=%2322D3EE&style=for-the-badge" alt="Profile visitors" />
 
-⚡ Fun fact **Dark mode not only eases eye strain in low light but also deters bugs, as they are attracted to light**
+<br/><br/>
+
+<!-- ═══════════════════════════ 01 · ABOUT ═══════════════════════════ -->
+<img src="assets/h-about.svg" width="100%" alt="01 — Mission profile" />
+
+<a href="https://nimna-niwarthana.com/#/about"><img src="assets/about.svg" width="100%" alt="Crew manifest — Nimna Niwarthana. Software Engineer, AI/ML Developer and Cybersecurity specialist. Currently building Catalogie. MSc Ethical Hacking (Abertay University), BSc (Hons) Computer Security (University of Plymouth). Published: MalDitectist, Taylor & Francis 2024." /></a>
+
+⚡ <i>Fun fact: dark mode isn't just easier on the eyes — it keeps the bugs away, because bugs are attracted to light.</i>
+
+<br/><br/>
+
+<!-- ═══════════════════════════ 02 · STACK ═══════════════════════════ -->
+<img src="assets/h-stack.svg" width="100%" alt="02 — Arsenal" />
+
+<img src="assets/stack.svg" width="100%" alt="Tech stack — Languages: Python, TypeScript, JavaScript, C, C#, Dart, SQL, Bash · AI/ML: PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, NLP, CNNs · Web & API: React, Node.js, Express, FastAPI, Django, Flutter, PostgreSQL, MongoDB · Security: Pen testing, Malware analysis, Forensics, Ghidra, Burp Suite, Volatility, Nmap · Infra: Docker, Linux, Git, GitHub Actions, Caddy, Oracle Cloud, Firebase" />
+
+<br/><br/>
+
+<!-- ═══════════════════════════ 03 · PROJECTS ═══════════════════════════ -->
+<img src="assets/h-projects.svg" width="100%" alt="03 — Featured missions" />
+
+<a href="https://catalogie.com/"><img src="assets/project-catalogie.svg" width="49%" alt="Catalogie — media tracker for films, TV, games and books" /></a>
+<a href="https://github.com/nimna29/malditectist-webapp-heroku"><img src="assets/project-malditectist.svg" width="49%" alt="MalDitectist — ensemble ML malware detection" /></a>
+<a href="https://github.com/nimna29/malscraper"><img src="assets/project-malscraper.svg" width="49%" alt="MalScraper — PE and opcode dataset builder" /></a>
+<a href="https://nimna-niwarthana.com/#/projects"><img src="assets/project-agenttesla.svg" width="49%" alt="AgentTesla malware analysis" /></a>
+
+<br/><br/>
+
+<!-- ═══════════════════════════ 04 · STATS ═══════════════════════════ -->
+<!-- Generated every 12h by .github/workflows/main.yml → published to the `output` branch -->
+<img src="assets/h-stats.svg" width="100%" alt="04 — Telemetry" />
+
+<img src="https://raw.githubusercontent.com/nimna29/Nimna29/output/stats.svg" width="49%" alt="GitHub stats" />
+<img src="https://raw.githubusercontent.com/nimna29/Nimna29/output/langs.svg" width="49%" alt="Top languages" />
+<img src="https://raw.githubusercontent.com/nimna29/Nimna29/output/streak.svg" width="98.5%" alt="Contribution streak" />
+
+<br/><br/>
+
+<!-- ═══════════════════════════ 05 · SNAKE ═══════════════════════════ -->
+<img src="assets/h-flight.svg" width="100%" alt="05 — Flight path" />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nimna29/Nimna29/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nimna29/Nimna29/output/github-contribution-grid-snake.svg" />
+  <img src="https://raw.githubusercontent.com/nimna29/Nimna29/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake eating my contribution graph" />
+</picture>
+
+<br/><br/>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<a href="https://nimna-niwarthana.com"><img src="assets/footer.svg" width="100%" alt="End of transmission — visit nimna-niwarthana.com" /></a>
 
 </div>
-<br>
-
-<div align="center"> 
-    <img width="92%" src="https://github.com/nimna29/Nimna29/assets/77341013/eb688b76-0f7d-436e-8fe2-3869f839c756" />
-</div>
-
-<br>
-
-<a href="https://www.youtube.com/watch?v=rcd_SQZDlnk"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
-
-<h2 align="center">👨‍💻 Connect with me 📲</h2>
-<div align="center"> 
-  <a href="https://www.linkedin.com/in/nimna-niwarthana">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-    
-  <a href="https://twitter.com/niwarthananimna">
-    <img src="https://img.shields.io/badge/Twitter-black?style=for-the-badge&logo=X" />
-  </a>
-  
-  <a href="https://nimna29.github.io/nimna-niwarthana">
-     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&color=0384fc&logo=todoist&logoColor=white"/>
-  </a>
-</div>
-
-<br>
-
-<div align="center">
-    <a href="https://www.buymeacoffee.com/nimna"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="34" width="130" alt="buymeacoffee.com/nimna" /></a><br>
-</div>
-
-<br>
-
-
-<h2 align="center">⚒️ Languages and Tools ⚙️</h2>
-<div align="center">
-    <img src="https://skillicons.dev/icons?i=py,typescript,javascript,c,cs,bash,html,css,php,arduino,dart&theme=dark" />
-    <img src="https://skillicons.dev/icons?i=fastapi,django,react,nodejs,flutter,firebase,mongodb,heroku,anaconda,docker&theme=dark" />
-    <img src="https://skillicons.dev/icons?i=linux,tensorflow,sklearn,opencv,pytorch,git,vscode,vim,wordpress,figma,ps,ai&theme=dark" />
-</div>
-<br>
-
-<h2 align="center">🔥 My Stats ⚡</h2>
-<div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nimna29&langs_count=8&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&card_width=380px" alt="nimna29"/>
-</div>
-<br>
-
-<div align="center">
-    <img align="center" src="https://github-readme-stats.vercel.app/api?username=nimna29&show_icons=true&theme=tokyonight&hide_border=true" alt="nimna29" />
-</div>
-<br>
-
-
-<a href="https://www.youtube.com/watch?v=lfucQM07tGQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
-
-
-<h2 align="center">👨‍💻 My Contributions 🌏</h2>
-
-<div align="center">
-    <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nimna29&show_icons=true&theme=tokyonight&hide_border=true" alt="nimna29" />
-</div>
-
-<div align="center">
-    <h2></h2>
-    <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/nimna29/Nimna29/output/github-contribution-grid-snake-dark.svg" />
-    <h2></h2>
-</div>
-
-<br>
-<div align="center">
-    <img src="https://github-profile-trophy.vercel.app/?username=nimna29&theme=tokyonight&margin-h=15&margin-w=5&no-bg=true" alt="nimna29" />
-</div>
-<br>
-
-<a href="https://www.youtube.com/watch?v=cpraXaw7dyc"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
