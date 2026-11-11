@@ -16,8 +16,8 @@ GREEN = "#34D399"
 BLUE = "#60A5FA"
 RED = "#F87171"
 TEAL = "#2DD4BF"
-TEXT = "#F1F5FF"   # primary copy — always bright
-SOFT = "#C3CEF0"   # secondary copy — still high contrast on the panels
+TEXT = "#F1F5FF"   # primary copy - always bright
+SOFT = "#C3CEF0"   # secondary copy - still high contrast on the panels
 MUTED = "#8B9BC4"  # decoration only (never body text)
 DIM = "#5B6894"    # decoration only (lines, orbits)
 
@@ -107,7 +107,7 @@ def panel(uid: str, w: int, h: int, seed: int, star_count: int = 60, nebula: boo
 
 
 def svg(w: int, h: int, uid: str, body: str, extra_css: str = "", title: str = "", pad_top: int = 0) -> str:
-    """`pad_top` adds transparent space above the artwork — used by section
+    """`pad_top` adds transparent space above the artwork - used by section
     headers so the README gets a consistent, compact gap between sections."""
     t = f"<title>{esc(title)}</title>" if title else ""
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h + pad_top}" viewBox="0 {-pad_top} {w} {h + pad_top}" role="img">

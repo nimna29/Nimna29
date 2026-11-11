@@ -29,7 +29,7 @@ ROLES = ["Software Engineer", "AI / ML Developer", "Cybersecurity Specialist"]
 CREW = [
     ("CALLSIGN", ["Nimna Niwarthana"]),
     ("ROLE", ["Software Engineer · AI/ML Developer · Cybersecurity"]),
-    ("MISSION", ["Catalogie — full-stack & security engineering (live)"]),
+    ("MISSION", ["Catalogie - full-stack & security engineering (live)"]),
     ("TRAINING", ["MSc Ethical Hacking · Abertay University",
                   "BSc (Hons) Computer Security · University of Plymouth"]),
     ("PUBLISHED", ["MalDitectist · book chapter, Taylor & Francis (2024)"]),
@@ -37,11 +37,11 @@ CREW = [
 ]
 
 # Closes the Mission Profile card, under a dashed rule.
-FUN_FACT = ["Dark mode isn't just easier on the eyes — it keeps",
+FUN_FACT = ["Dark mode isn't just easier on the eyes - it keeps",
             "the bugs away, because bugs are attracted to light."]
 
 # Curated from the portfolio's stack catalog (nimna-niwarthana/scripts/stackCatalog.mjs).
-# Each row must fit on one line — stack() raises if a row overflows.
+# Each row must fit on one line - stack() raises if a row overflows.
 STACK = [
     ("LANGUAGES", CYAN, ["Python", "TypeScript", "JavaScript", "C", "C#", "Java", "Dart", "PHP", "SQL", "Bash"]),
     ("AI / ML", VIOLET, ["PyTorch", "TensorFlow", "Keras", "scikit-learn", "OpenCV", "YOLO", "BERT", "spaCy", "NLTK"]),
@@ -61,7 +61,7 @@ PROJECTS = [
          chips=["React", "TypeScript", "Express", "PostgreSQL", "Caddy"]),
     dict(slug="malditectist", status="PUBLISHED", color=VIOLET, tag="AI/ML RESEARCH · TAYLOR & FRANCIS",
          title="MalDitectist",
-         lines=["Ensemble malware detection — signature +",
+         lines=["Ensemble malware detection - signature +",
                 "anomaly models, 98.9% RF accuracy."],
          chips=["Python", "scikit-learn", "TensorFlow", "Django", "React"]),
     dict(slug="malscraper", status="TOOL", color=PINK, tag="MALWARE RESEARCH · DOCKER CLI",
@@ -198,7 +198,7 @@ def hero() -> str:
   <text x="100" y="94" class="mono" font-size="26" fill="{SOFT}">nimna@orbit:~$ <tspan fill="{TEXT}" font-weight="700">whoami</tspan></text>
   <text x="96" y="182" class="sans" font-size="68" font-weight="800" letter-spacing="2" fill="url(#{uid}-edge)">{esc(NAME)}</text>
   {''.join(roles)}"""
-    return svg(W, H, uid, body, css, f"{NAME} — " + " · ".join(ROLES))
+    return svg(W, H, uid, body, css, f"{NAME} - " + " · ".join(ROLES))
 
 
 # ═════════════════════════════ BUTTONS ═════════════════════════════
@@ -227,7 +227,7 @@ def button(label, sub, color, kind, uid) -> str:
   <g transform="translate(18,{H / 2 - 12})">{icon(kind, color)}</g>
   <text x="57" y="26" class="mono" font-size="15.5" font-weight="800" letter-spacing="1" fill="{TEXT}">{esc(label)}</text>
   <text x="57" y="45" class="mono" font-size="13" font-weight="600" fill="{color}">{esc(sub)}</text>"""
-    return svg(W, H, uid, body, title=f"{label} — {sub}").replace('rx="14"/></clipPath>', 'rx="12"/></clipPath>')
+    return svg(W, H, uid, body, title=f"{label} - {sub}").replace('rx="14"/></clipPath>', 'rx="12"/></clipPath>')
 
 
 # ═════════════════════════════ SECTION HEADERS ═════════════════════════════
@@ -277,7 +277,7 @@ def about() -> str:
   <image href="data:image/jpeg;base64,{b64}" x="{px - pr}" y="{py - pr}" width="{pr * 2}" height="{pr * 2}" clip-path="url(#{uid}-face)" preserveAspectRatio="xMidYMid slice"/>
   <line x1="340" y1="40" x2="340" y2="{H - 40}" stroke="{LINE}" stroke-width="2"/>
   {''.join(rows)}"""
-    return svg(W, H, uid, body, css, "Mission profile — Nimna Niwarthana")
+    return svg(W, H, uid, body, css, "Mission profile - Nimna Niwarthana")
 
 
 # ═════════════════════════════ STACK ═════════════════════════════
@@ -290,7 +290,7 @@ def stack() -> str:
     for i, (label, color, items) in enumerate(STACK):
         row_w = sum(chip_w(t, size, pad) for t in items) + gap * (len(items) - 1)
         if x0 + row_w > W - 42:
-            raise SystemExit(f"stack row {label!r} is {x0 + row_w - (W - 42):.0f} units too wide — drop a tool")
+            raise SystemExit(f"stack row {label!r} is {x0 + row_w - (W - 42):.0f} units too wide - drop a tool")
         y = top + i * row
         mid = y + chip_h / 2
         parts.append(f'<circle cx="44" cy="{mid}" r="5" fill="{color}"/>')
@@ -321,7 +321,7 @@ def project(p) -> str:
   <text x="32" y="140" class="mono" font-size="17" font-weight="700" letter-spacing="1" fill="{c}">{esc(p['tag'])}</text>
   {lines}
   {chips(32, 234, p['chips'], c, size=17, gap=6, h=36, pad=9)}"""
-    return svg(W, H, uid, body, title=f"{p['title']} — " + " ".join(p["lines"]))
+    return svg(W, H, uid, body, title=f"{p['title']} - " + " ".join(p["lines"]))
 
 
 # ═════════════════════════════ DIVIDER / FOOTER ═════════════════════════════
@@ -358,7 +358,7 @@ def footer() -> str:
   </g>
   <text x="{W / 2}" y="82" text-anchor="middle" class="sans" font-size="40" font-weight="800" letter-spacing="1" fill="{TEXT}">Thanks for dropping by, traveller.</text>
   <text x="{W / 2}" y="128" text-anchor="middle" class="mono" font-size="24" font-weight="600" fill="{CYAN}">&gt; launch nimna-niwarthana.com<tspan class="cur">_</tspan></text>"""
-    return svg(W, H, uid, body, css, "Thanks for dropping by — visit nimna-niwarthana.com")
+    return svg(W, H, uid, body, css, "Thanks for dropping by - visit nimna-niwarthana.com")
 
 
 def main() -> None:

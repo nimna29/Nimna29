@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate live GitHub telemetry cards (stats, languages, streak) as SVG.
 
-Runs inside GitHub Actions — no third-party card services, so nothing can rate
+Runs inside GitHub Actions - no third-party card services, so nothing can rate
 limit or go offline. Uses the GitHub GraphQL API with GH_TOKEN.
 
   GH_TOKEN=... python3 scripts/build_stats.py --user nimna29 --out dist
@@ -173,7 +173,7 @@ def streaks(days: dict):
 
 def fmt_date(s):
     if not s:
-        return "—"
+        return "-"
     d = dt.date.fromisoformat(s)
     out = f"{d:%b} {d.day}"
     return out if d.year == dt.date.today().year else f"{out}, {d.year}"
@@ -281,18 +281,18 @@ def streak_card(d: dict) -> str:
   @keyframes flick {{ from {{ transform: scaleY(1); }} to {{ transform: scaleY(1.25); }} }}"""
     body = f"""{panel(uid, W, H, seed=61, star_count=90)}
   <defs><linearGradient id="{uid}-bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="{VIOLET}"/><stop offset="1" stop-color="{CYAN}"/></linearGradient></defs>
-  {col(230, "TOTAL CONTRIBUTIONS", k(total), f"{d['since']} — present", CYAN)}
-  {col(W - 230, "LONGEST STREAK", f"{lng} days", f"{fmt_date(ls)} — {fmt_date(le)}", VIOLET)}
+  {col(230, "TOTAL CONTRIBUTIONS", k(total), f"{d['since']} - present", CYAN)}
+  {col(W - 230, "LONGEST STREAK", f"{lng} days", f"{fmt_date(ls)} - {fmt_date(le)}", VIOLET)}
   <circle cx="{cx}" cy="{ry}" r="{ring_r}" fill="none" stroke="{LINE}" stroke-width="8"/>
   <circle cx="{cx}" cy="{ry}" r="{ring_r}" fill="none" stroke="url(#{uid}-edge)" stroke-width="8" stroke-linecap="round"
     stroke-dasharray="{circ * frac:.1f} {circ:.1f}" transform="rotate(-90 {cx} {ry})"/>
   <path class="flame" d="M{cx} 22 c7 9 11 13 0 24 c-11 -11 -7 -15 0 -24z" fill="{AMBER}"/>
   <text x="{cx}" y="{ry + 15}" text-anchor="middle" class="sans" font-size="46" font-weight="800" fill="{TEXT}">{cur}</text>
   <text x="{cx}" y="{ry + ring_r + 36}" text-anchor="middle" class="mono" font-size="20" font-weight="800" letter-spacing="2.5" fill="{AMBER}">CURRENT STREAK</text>
-  <text x="{cx}" y="{ry + ring_r + 66}" text-anchor="middle" class="mono" font-size="18" font-weight="600" fill="{SOFT}">{esc(f"{fmt_date(cs)} — {fmt_date(ce)}" if cur else "ignition pending")}</text>
+  <text x="{cx}" y="{ry + ring_r + 66}" text-anchor="middle" class="mono" font-size="18" font-weight="600" fill="{SOFT}">{esc(f"{fmt_date(cs)} - {fmt_date(ce)}" if cur else "ignition pending")}</text>
   <line x1="{gx}" y1="{gy + 1}" x2="{gx + gw}" y2="{gy + 1}" stroke="{LINE}" stroke-width="1.5"/>
   {bars}"""
-    return svg(W, H, uid, body, css, f"Contribution streak — current {cur} days, longest {lng} days")
+    return svg(W, H, uid, body, css, f"Contribution streak - current {cur} days, longest {lng} days")
 
 
 def placeholder(name: str, w: int, h: int) -> str:
