@@ -254,45 +254,88 @@ def langs_card(d: dict) -> str:
     return svg(W, H, uid, body, title="Top languages")
 
 
+def days(n: int) -> str:
+    return f"{n} day" if n == 1 else f"{n} days"
+
+
+def icon_grid(cx: float, cy: float) -> str:
+    """Mini contribution grid - icon for total contributions."""
+    s, g = 9, 3
+    shade = [[.3, .6, 1, .45, .8], [.6, 1, .35, 1, .55], [1, .4, .7, .3, 1]]
+    x0, y0 = cx - (5 * s + 4 * g) / 2, cy - (3 * s + 2 * g) / 2
+    return "".join(
+        f'<rect x="{x0 + c * (s + g):.1f}" y="{y0 + r * (s + g):.1f}" width="{s}" height="{s}" rx="2" fill="{CYAN}" opacity="{o}"/>'
+        for r, row in enumerate(shade) for c, o in enumerate(row))
+
+
+def icon_trophy(cx: float, cy: float, uid: str) -> str:
+    """Trophy - icon for longest streak."""
+    return f"""<g transform="translate({cx} {cy})">
+    <path d="M-14 -15 H-21 V-11 C-21 -3 -16 1 -11 1 M14 -15 H21 V-11 C21 -3 16 1 11 1" fill="none" stroke="{VIOLET}" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M-14 -20 H14 V-8 C14 4 7 11 0 11 C-7 11 -14 4 -14 -8 Z" fill="url(#{uid}-tr)"/>
+    <rect x="-3.5" y="10" width="7" height="8" fill="#7C3AED"/>
+    <rect x="-12" y="17" width="24" height="7" rx="2.5" fill="url(#{uid}-tr)"/>
+    <path d="M0 -14 l2.4 4.9 5.4 .8 -3.9 3.8 .9 5.4 -4.8 -2.5 -4.8 2.5 .9 -5.4 -3.9 -3.8 5.4 -.8z" fill="#F5F3FF" opacity=".9"/>
+  </g>"""
+
+
+def icon_flame(cx: float, cy: float, uid: str, lit: bool) -> str:
+    """Layered vector flame - icon for current streak. Sways gently; dim when the streak is 0."""
+    return f"""<circle class="glow" cx="{cx}" cy="{cy + 6}" r="50" fill="url(#{uid}-glow)" opacity="{'.75' if lit else '.2'}"/>
+  <g transform="translate({cx} {cy}) scale(.92)" opacity="{'1' if lit else '.4'}">
+    <g class="fl-outer"><path d="M0 -28 C6 -18 20 -10 20 6 C20 19 11 28 0 28 C-11 28 -20 19 -20 6 C-20 -4 -14 -10 -10 -16 C-9 -9 -6 -5 -2 -4 C-4 -12 -4 -21 0 -28 Z" fill="url(#{uid}-fo)"/></g>
+    <g class="fl-mid"><path d="M1 -8 C5 -2 12 4 12 12 C12 20 6 25 0 25 C-6 25 -12 20 -12 12 C-12 5 -7 0 -4 -4 C-3 0 -1 2 1 2 C0 -2 -.5 -5 1 -8 Z" fill="{AMBER}"/></g>
+    <g class="fl-core"><path d="M0 6 C3 10 6 14 6 18 C6 22 3 25 0 25 C-3 25 -6 22 -6 18 C-6 14 -3 10 0 6 Z" fill="#FEF3C7"/></g>
+  </g>"""
+
+
 def streak_card(d: dict) -> str:
-    W, H, uid = 1200, 310, "streak"
+    W, H, uid = 1200, 320, "streak"
     total, (cur, cs, ce), (lng, ls, le) = streaks(d["days"])
-    # last 52 weeks as weekly bars
+    # last 52 weeks as weekly bars; this week is highlighted amber
     vals = list(d["days"].values())[-364:]
     weeks = [sum(vals[i:i + 7]) for i in range(0, len(vals), 7)]
     mx = max(weeks) if weeks and max(weeks) else 1
-    gx, gw, gh, gy = 40, W - 80, 62, H - 28
+    gx, gw, gh, gy = 40, W - 80, 56, H - 26
     bw = gw / max(len(weeks), 1)
     bars = "".join(
-        f'<rect x="{gx + i * bw + 1:.1f}" y="{gy - max(gh * v / mx, 3):.1f}" width="{bw - 3:.1f}" height="{max(gh * v / mx, 3):.1f}" rx="2" fill="url(#{uid}-bar)" opacity="{.4 + .6 * v / mx:.2f}"/>'
+        f'<rect x="{gx + i * bw + 1:.1f}" y="{gy - max(gh * v / mx, 3):.1f}" width="{bw - 3:.1f}" height="{max(gh * v / mx, 3):.1f}" rx="2" '
+        + (f'fill="{AMBER}"/>' if i == len(weeks) - 1 and v else f'fill="url(#{uid}-bar)" opacity="{.4 + .6 * v / mx:.2f}"/>')
         for i, v in enumerate(weeks))
-    ring_r, ry = 58, 100
-    circ = 2 * 3.14159 * ring_r
-    frac = min(cur / lng, 1) if lng else 0
+
+    iy = 52  # icon row; numbers, labels and dates sit on shared baselines below
 
     def col(x, label, value, sub, color):
-        return (f'<text x="{x}" y="96" text-anchor="middle" class="sans" font-size="56" font-weight="800" fill="{TEXT}">{value}</text>'
-                f'<text x="{x}" y="134" text-anchor="middle" class="mono" font-size="20" font-weight="800" letter-spacing="2.5" fill="{color}">{label}</text>'
-                f'<text x="{x}" y="164" text-anchor="middle" class="mono" font-size="18" font-weight="600" fill="{SOFT}">{esc(sub)}</text>')
+        return (f'<text x="{x}" y="138" text-anchor="middle" class="sans" font-size="56" font-weight="800" fill="{TEXT}">{value}</text>'
+                f'<text x="{x}" y="174" text-anchor="middle" class="mono" font-size="20" font-weight="800" letter-spacing="2.5" fill="{color}">{label}</text>'
+                f'<text x="{x}" y="203" text-anchor="middle" class="mono" font-size="18" font-weight="600" fill="{SOFT}">{esc(sub)}</text>')
 
-    cx = W / 2
-    css = f"""
-  .flame {{ animation: flick .6s ease-in-out infinite alternate; transform-origin: {cx:.0f}px 46px; }}
-  @keyframes flick {{ from {{ transform: scaleY(1); }} to {{ transform: scaleY(1.25); }} }}"""
+    css = """
+  .fl-outer, .fl-mid, .fl-core { transform-box: fill-box; transform-origin: 50% 100%; }
+  .fl-outer { animation: sway 2.6s ease-in-out infinite; }
+  .fl-mid { animation: sway 2.6s ease-in-out -.5s infinite; }
+  .fl-core { animation: breathe 1.3s ease-in-out infinite; }
+  .glow { animation: glow 2.6s ease-in-out infinite; }
+  @keyframes sway { 0%,100% { transform: rotate(0deg) scale(1,1); } 30% { transform: rotate(-3deg) scale(.97,1.04); } 70% { transform: rotate(3deg) scale(1.02,.98); } }
+  @keyframes breathe { 0%,100% { transform: scale(1,1); } 50% { transform: scale(.9,1.1); } }
+  @keyframes glow { 0%,100% { opacity: .55; } 50% { opacity: .9; } }"""
     body = f"""{panel(uid, W, H, seed=61, star_count=90)}
-  <defs><linearGradient id="{uid}-bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="{VIOLET}"/><stop offset="1" stop-color="{CYAN}"/></linearGradient></defs>
-  {col(230, "TOTAL CONTRIBUTIONS", k(total), f"{d['since']} - present", CYAN)}
-  {col(W - 230, "LONGEST STREAK", f"{lng} days", f"{fmt_date(ls)} - {fmt_date(le)}", VIOLET)}
-  <circle cx="{cx}" cy="{ry}" r="{ring_r}" fill="none" stroke="{LINE}" stroke-width="8"/>
-  <circle cx="{cx}" cy="{ry}" r="{ring_r}" fill="none" stroke="url(#{uid}-edge)" stroke-width="8" stroke-linecap="round"
-    stroke-dasharray="{circ * frac:.1f} {circ:.1f}" transform="rotate(-90 {cx} {ry})"/>
-  <path class="flame" d="M{cx} 22 c7 9 11 13 0 24 c-11 -11 -7 -15 0 -24z" fill="{AMBER}"/>
-  <text x="{cx}" y="{ry + 15}" text-anchor="middle" class="sans" font-size="46" font-weight="800" fill="{TEXT}">{cur}</text>
-  <text x="{cx}" y="{ry + ring_r + 36}" text-anchor="middle" class="mono" font-size="20" font-weight="800" letter-spacing="2.5" fill="{AMBER}">CURRENT STREAK</text>
-  <text x="{cx}" y="{ry + ring_r + 66}" text-anchor="middle" class="mono" font-size="18" font-weight="600" fill="{SOFT}">{esc(f"{fmt_date(cs)} - {fmt_date(ce)}" if cur else "ignition pending")}</text>
+  <defs>
+    <linearGradient id="{uid}-bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="{VIOLET}"/><stop offset="1" stop-color="{CYAN}"/></linearGradient>
+    <linearGradient id="{uid}-fo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCD34D"/><stop offset=".55" stop-color="#F97316"/><stop offset="1" stop-color="#EA580C"/></linearGradient>
+    <linearGradient id="{uid}-tr" x1="0" x2="1"><stop offset="0" stop-color="#DDD6FE"/><stop offset=".5" stop-color="{VIOLET}"/><stop offset="1" stop-color="#6D28D9"/></linearGradient>
+    <radialGradient id="{uid}-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="{AMBER}" stop-opacity=".55"/><stop offset="1" stop-color="{AMBER}" stop-opacity="0"/></radialGradient>
+  </defs>
+  <path d="M400 40 V206 M800 40 V206" stroke="{LINE}" stroke-width="1.5"/>
+  {icon_grid(200, iy)}
+  {icon_flame(600, iy - 2, uid, cur > 0)}
+  {icon_trophy(1000, iy, uid)}
+  {col(200, "TOTAL CONTRIBUTIONS", k(total), f"{d['since']} - present", CYAN)}
+  {col(600, "CURRENT STREAK", days(cur), f"{fmt_date(cs)} - {fmt_date(ce)}" if cur else "ignition pending", AMBER)}
+  {col(1000, "LONGEST STREAK", days(lng), f"{fmt_date(ls)} - {fmt_date(le)}", VIOLET)}
   <line x1="{gx}" y1="{gy + 1}" x2="{gx + gw}" y2="{gy + 1}" stroke="{LINE}" stroke-width="1.5"/>
   {bars}"""
-    return svg(W, H, uid, body, css, f"Contribution streak - current {cur} days, longest {lng} days")
+    return svg(W, H, uid, body, css, f"Contribution streak - current {days(cur)}, longest {days(lng)}")
 
 
 def placeholder(name: str, w: int, h: int) -> str:
@@ -311,7 +354,7 @@ def main() -> None:
     os.makedirs(a.out, exist_ok=True)
 
     cards = {"stats.svg": (stats_card, 590, 300), "langs.svg": (langs_card, 590, 300),
-             "streak.svg": (streak_card, 1200, 310)}
+             "streak.svg": (streak_card, 1200, 320)}
     try:
         data = mock() if a.mock else fetch(os.environ["GH_TOKEN"], a.user)
     except Exception as e:  # keep the README intact even if the API hiccups
