@@ -336,14 +336,60 @@ def divider() -> str:
     return svg(W, H, uid, body)
 
 
+def rocket(uid: str) -> str:
+    """Vector rocket drawn pointing straight up around (0,0), nose at y=-62 and
+    flame tail at y=98. The caller places and tilts it with a wrapping <g>."""
+    body = ("M0 -62 C13 -50 20 -28 20 -2 L18 30 Q17.5 36 12 36 H-12 "
+            "Q-17.5 36 -18 30 L-20 -2 C-20 -28 -13 -50 0 -62 Z")
+    return f"""<defs>
+    <linearGradient id="{uid}-rb" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".42" stop-color="#E9EDFB"/><stop offset="1" stop-color="#8592C2"/></linearGradient>
+    <linearGradient id="{uid}-rf" x1="0" x2="1"><stop offset="0" stop-color="#C4B5FD"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#4C1D95"/></linearGradient>
+    <radialGradient id="{uid}-rw" cx=".35" cy=".35" r=".75"><stop offset="0" stop-color="#A5F3FC"/><stop offset=".5" stop-color="{CYAN}"/><stop offset="1" stop-color="#1E3A8A"/></radialGradient>
+    <linearGradient id="{uid}-fo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDE68A"/><stop offset=".4" stop-color="{AMBER}"/><stop offset="1" stop-color="#F97316" stop-opacity="0"/></linearGradient>
+    <linearGradient id="{uid}-fi" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FEF3C7" stop-opacity="0"/></linearGradient>
+    <clipPath id="{uid}-rc"><path d="{body}"/></clipPath>
+  </defs>
+  <g stroke="{TEXT}" stroke-width="2" stroke-linecap="round" fill="none">
+    <path class="streak" d="M-34 40 V62"/><path class="streak b" d="M36 30 V50"/><path class="streak c" d="M-46 6 V22"/>
+  </g>
+  <g class="puff" fill="{SOFT}">
+    <circle cx="0" cy="106" r="9" opacity=".35"/><circle cx="-5" cy="124" r="12" opacity=".22"/><circle cx="4" cy="145" r="15" opacity=".12"/>
+  </g>
+  <g class="flame">
+    <path d="M-12 46 C-12 62 -5 76 0 98 C5 76 12 62 12 46 Z" fill="url(#{uid}-fo)"/>
+    <path d="M-6.5 46 C-6.5 56 -2.5 65 0 78 C2.5 65 6.5 56 6.5 46 Z" fill="url(#{uid}-fi)"/>
+  </g>
+  <path d="M-18 4 C-30 12 -36 28 -34 48 L-17 34 Z" fill="url(#{uid}-rf)"/>
+  <path d="M18 4 C30 12 36 28 34 48 L17 34 Z" fill="url(#{uid}-rf)"/>
+  <path d="M-11 35 H11 L14 47 H-14 Z" fill="#3B4470"/>
+  <path d="M-14 46.5 H14" stroke="#1E2A5A" stroke-width="2"/>
+  <path d="{body}" fill="url(#{uid}-rb)"/>
+  <g clip-path="url(#{uid}-rc)">
+    <rect x="-22" y="-66" width="44" height="28" fill="url(#{uid}-rf)"/>
+    <rect x="-22" y="-38" width="44" height="2.5" fill="#312E81" opacity=".55"/>
+    <rect x="-22" y="14" width="44" height="6" fill="url(#{uid}-rf)"/>
+  </g>
+  <circle cx="0" cy="-13" r="10.5" fill="#E9EDFB" stroke="#6D7AA8" stroke-width="1.6"/>
+  <circle cx="0" cy="-13" r="7.5" fill="url(#{uid}-rw)"/>
+  <ellipse cx="-2.6" cy="-15.6" rx="2.6" ry="1.8" fill="#FFFFFF" opacity=".9"/>
+  <rect x="-2.5" y="20" width="5" height="28" rx="2.5" fill="url(#{uid}-rf)"/>
+  <path d="M-13.5 -38 C-16.5 -24 -17.5 -8 -16.5 8" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".75"/>"""
+
+
 def footer() -> str:
     W, H, uid = 1200, 210, "foot"
-    rx = W - 150  # rocket x
     css = """
   .cur { animation: blink 1s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
-  .rise { animation: rise 9s ease-in-out infinite; }
-  @keyframes rise { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }"""
+  .rise { animation: rise 4s ease-in-out infinite; }
+  @keyframes rise { 0%,100% { transform: translate(0,0); } 50% { transform: translate(4px,-7px); } }
+  .flame { transform-box: fill-box; transform-origin: 50% 0%; animation: flick .16s ease-in-out infinite alternate; }
+  @keyframes flick { from { transform: scale(1,1); } to { transform: scale(.88,1.2); } }
+  .puff { animation: puff 1.4s ease-out infinite; }
+  @keyframes puff { from { transform: translateY(-8px); opacity: 1; } to { transform: translateY(10px); opacity: .35; } }
+  .streak { animation: streak 1.2s linear infinite; }
+  .streak.b { animation-delay: .4s; } .streak.c { animation-delay: .8s; }
+  @keyframes streak { from { transform: translateY(-14px); opacity: 0; } 30% { opacity: .8; } to { transform: translateY(26px); opacity: 0; } }"""
     body = f"""{panel(uid, W, H, seed=3, star_count=110)}
   <defs><radialGradient id="{uid}-hz" cx=".5" cy="0" r=".7">
     <stop offset="0" stop-color="{VIOLET}" stop-opacity=".9"/><stop offset=".45" stop-color="#312E81"/><stop offset="1" stop-color="#0B0A26"/></radialGradient></defs>
@@ -351,10 +397,7 @@ def footer() -> str:
     <ellipse cx="{W / 2}" cy="{H + 560}" rx="900" ry="600" fill="url(#{uid}-hz)"/>
     <ellipse cx="{W / 2}" cy="{H + 560}" rx="900" ry="600" fill="none" stroke="url(#{uid}-edge)" stroke-width="3"/>
     <ellipse cx="{W / 2}" cy="{H + 560}" rx="910" ry="612" fill="none" stroke="{CYAN}" stroke-opacity=".25" stroke-width="10"/>
-    <g class="rise">
-      <path d="M{rx} 74 l12 -32 12 32 -5 0 0 17 -14 0 0 -17 z" fill="{TEXT}" opacity=".9"/>
-      <path d="M{rx + 5} 106 l7 17 7 -17 z" fill="{AMBER}" class="tw" style="animation-duration:.4s"/>
-    </g>
+    <g class="rise"><g transform="translate(1070 100) rotate(38) scale(1.1)">{rocket(uid)}</g></g>
   </g>
   <text x="{W / 2}" y="82" text-anchor="middle" class="sans" font-size="40" font-weight="800" letter-spacing="1" fill="{TEXT}">Thanks for dropping by, traveller.</text>
   <text x="{W / 2}" y="128" text-anchor="middle" class="mono" font-size="24" font-weight="600" fill="{CYAN}">&gt; launch nimna-niwarthana.com<tspan class="cur">_</tspan></text>"""
