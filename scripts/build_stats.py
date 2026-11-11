@@ -198,7 +198,7 @@ def stats_card(d: dict) -> str:
     metrics = [
         ("COMMITS", k(d["commits"]), CYAN), ("PULL REQUESTS", k(d["prs"]), VIOLET),
         ("STARS EARNED", k(d["stars"]), AMBER), ("ISSUES", k(d["issues"]), GREEN),
-        ("REPOSITORIES", k(d["repos"]), CYAN), ("CONTRIBUTED TO", k(d["contributed"]), VIOLET),
+        ("FOLLOWERS", k(d["followers"]), CYAN), ("CONTRIBUTED TO", k(d["contributed"]), VIOLET),
     ]
     cells = []
     for i, (lab, val, c) in enumerate(metrics):
@@ -207,7 +207,7 @@ def stats_card(d: dict) -> str:
         cells.append(f'<rect x="{x}" y="{y}" width="4" height="58" rx="2" fill="{c}"/>'
                      f'<text x="{x + 16}" y="{y + 16}" class="mono" font-size="17" font-weight="700" letter-spacing="1" fill="{SOFT}">{lab}</text>'
                      f'<text x="{x + 16}" y="{y + 54}" class="sans" font-size="36" font-weight="800" fill="{TEXT}">{val}</text>')
-    # radar ring: followers in the core
+    # radar ring: repositories in the core
     cx, cy, rr = 482, 160, 72
     rings = "".join(f'<circle cx="{cx}" cy="{cy}" r="{r:.1f}" fill="none" stroke="{LINE}" stroke-width="1.4"/>' for r in (rr * .4, rr * .7, rr))
     css = f"""
@@ -222,8 +222,8 @@ def stats_card(d: dict) -> str:
   <g class="sweep"><path d="M{cx} {cy} L{cx + rr} {cy} A{rr} {rr} 0 0 0 {cx + rr * .707:.1f} {cy - rr * .707:.1f} Z" fill="url(#{uid}-sw)"/></g>
   <circle cx="{cx + 34}" cy="{cy - 40}" r="3.5" fill="{VIOLET}" class="tw"/>
   <circle cx="{cx - 44}" cy="{cy + 22}" r="3" fill="{AMBER}" class="tw" style="animation-delay:1.2s"/>
-  <text x="{cx}" y="{cy + 12}" text-anchor="middle" class="sans" font-size="36" font-weight="800" fill="{TEXT}">{k(d['followers'])}</text>
-  <text x="{cx}" y="{cy + rr + 34}" text-anchor="middle" class="mono" font-size="17" font-weight="700" letter-spacing="2" fill="{SOFT}">FOLLOWERS</text>"""
+  <text x="{cx}" y="{cy + 12}" text-anchor="middle" class="sans" font-size="36" font-weight="800" fill="{TEXT}">{k(d['repos'])}</text>
+  <text x="{cx}" y="{cy + rr + 34}" text-anchor="middle" class="mono" font-size="17" font-weight="700" letter-spacing="2" fill="{SOFT}">REPOSITORIES</text>"""
     return svg(W, H, uid, body, css, "GitHub stats")
 
 

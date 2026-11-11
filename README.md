@@ -13,9 +13,7 @@
 <!-- ═══════════════════════════ 01 · ABOUT ═══════════════════════════ -->
 <img src="assets/h-about.svg" width="100%" alt="01 — Mission profile" />
 
-<a href="https://nimna-niwarthana.com/#/about"><img src="assets/about.svg" width="100%" alt="Crew manifest — Nimna Niwarthana. Software Engineer, AI/ML Developer and Cybersecurity specialist. Currently building Catalogie. MSc Ethical Hacking (Abertay University), BSc (Hons) Computer Security (University of Plymouth). Published: MalDitectist, Taylor & Francis 2024." /></a>
-
-⚡ <b>Fun fact:</b> dark mode isn't just easier on the eyes — it keeps the bugs away, because bugs are attracted to light.
+<a href="https://nimna-niwarthana.com/#/about"><img src="assets/about.svg" width="100%" alt="Mission profile — Nimna Niwarthana. Software Engineer, AI/ML Developer and Cybersecurity specialist. Currently building Catalogie. MSc Ethical Hacking (Abertay University), BSc (Hons) Computer Security (University of Plymouth). Published: MalDitectist, Taylor &amp; Francis 2024. Fun fact: dark mode isn't just easier on the eyes — it keeps the bugs away, because bugs are attracted to light." /></a>
 
 <!-- ═══════════════════════════ 02 · STACK ═══════════════════════════ -->
 <img src="assets/h-stack.svg" width="100%" alt="02 — Arsenal" />

@@ -36,6 +36,10 @@ CREW = [
     ("ORBITS", ["Malware analysis · Pen testing · ML · Self-hosted infra"]),
 ]
 
+# Closes the Mission Profile card, under a dashed rule.
+FUN_FACT = ["Dark mode isn't just easier on the eyes — it keeps",
+            "the bugs away, because bugs are attracted to light."]
+
 STACK = [
     ("LANGUAGES", CYAN, ["Python", "TypeScript", "JavaScript", "C", "C#", "Dart", "SQL", "Bash"]),
     ("AI / ML", VIOLET, ["PyTorch", "TensorFlow", "Keras", "scikit-learn", "OpenCV", "NLP", "CNNs"]),
@@ -238,18 +242,24 @@ def header(num: str, title: str, uid: str) -> str:
 # ═════════════════════════════ ABOUT / CREW CARD ═════════════════════════════
 def about() -> str:
     W, uid = 1200, "about"
-    top, row_h, line_h = 76, 54, 32
-    rows_h = sum(row_h + (len(v) - 1) * line_h for _, v in CREW) - row_h
-    H = int(top + rows_h + 52)
-    with open(os.path.join(OUT, "src", "portrait.jpg"), "rb") as f:
-        b64 = base64.b64encode(f.read()).decode()
-    px, py, pr = 172, H / 2, 108
+    top, row_h, line_h = 72, 54, 32
     rows, y = [], top
     for k, vals in CREW:
         rows.append(f'<text x="368" y="{y}" class="mono" font-size="17" font-weight="700" letter-spacing="2" fill="{CYAN}">{esc(k)}</text>')
         for j, v in enumerate(vals):
             rows.append(f'<text x="512" y="{y + j * line_h}" class="sans" font-size="24" font-weight="600" fill="{TEXT}">{esc(v)}</text>')
         y += row_h + (len(vals) - 1) * line_h
+    # fun fact: dashed rule, amber bolt + label, italic two-line value
+    rule_y, fy = y - 26, y + 14
+    rows.append(f'<line x1="368" y1="{rule_y}" x2="{W - 48}" y2="{rule_y}" stroke="{DIM}" stroke-width="1.6" stroke-dasharray="3 7"/>')
+    rows.append(f'<path d="M378 {fy - 18} L367 {fy - 4} H374 L371 {fy + 5} L383 {fy - 10} H376 L380 {fy - 18} Z" fill="{AMBER}"/>')
+    rows.append(f'<text x="392" y="{fy}" class="mono" font-size="17" font-weight="800" letter-spacing="2" fill="{AMBER}">FUN FACT</text>')
+    for j, t in enumerate(FUN_FACT):
+        rows.append(f'<text x="512" y="{fy + j * line_h}" class="sans" font-size="23" font-style="italic" font-weight="500" fill="{SOFT}">{esc(t)}</text>')
+    H = int(fy + (len(FUN_FACT) - 1) * line_h + 46)
+    with open(os.path.join(OUT, "src", "portrait.jpg"), "rb") as f:
+        b64 = base64.b64encode(f.read()).decode()
+    px, py, pr = 172, H / 2, 108
     css = """
   .spin { animation: spin 30s linear infinite; transform-origin: %dpx %dpx; }
   .spin.r { animation-direction: reverse; animation-duration: 45s; }
@@ -262,7 +272,7 @@ def about() -> str:
   <image href="data:image/jpeg;base64,{b64}" x="{px - pr}" y="{py - pr}" width="{pr * 2}" height="{pr * 2}" clip-path="url(#{uid}-face)" preserveAspectRatio="xMidYMid slice"/>
   <line x1="340" y1="40" x2="340" y2="{H - 40}" stroke="{LINE}" stroke-width="2"/>
   {''.join(rows)}"""
-    return svg(W, H, uid, body, css, "Crew manifest — Nimna Niwarthana")
+    return svg(W, H, uid, body, css, "Mission profile — Nimna Niwarthana")
 
 
 # ═════════════════════════════ STACK ═════════════════════════════
