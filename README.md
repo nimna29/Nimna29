@@ -18,7 +18,7 @@
 <!-- ═══════════════════════════ 02 · STACK ═══════════════════════════ -->
 <img src="assets/h-stack.svg" width="100%" alt="02 — Arsenal" />
 
-<p><img src="assets/stack.svg" width="100%" alt="Tech stack — Languages: Python, TypeScript, JavaScript, C, C#, Dart, SQL, Bash · AI/ML: PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, NLP, CNNs · Web & API: React, Node.js, Express, FastAPI, Django, Flutter, PostgreSQL, MongoDB · Security: Pen testing, Malware analysis, Forensics, Ghidra, Burp Suite, Volatility, Nmap · Infra: Docker, Linux, Git, GitHub Actions, Caddy, Oracle Cloud, Firebase" /></p>
+<p><img src="assets/stack.svg" width="100%" alt="Tech stack — Languages: Python, TypeScript, JavaScript, C, C#, Java, Dart, PHP, SQL, Bash · AI/ML: PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, YOLO, BERT, spaCy, NLTK · Gen AI: Anthropic API, OpenAI API, LangChain, Hugging Face, Ollama, Claude Code · Web &amp; API: React, Next.js, Node.js, Express, FastAPI, Django, Flutter, Tailwind CSS · Data: PostgreSQL, MySQL, MongoDB, MS SQL Server, Firebase, pandas, Jupyter · Security: Burp Suite, Metasploit, Nmap, Wireshark, OWASP ZAP, SQLmap, BloodHound · Forensics: Ghidra, IDA, dnSpy, Volatility, Autopsy, FTK Imager, pefile, Capstone · Infra: Docker, Linux, Git, GitHub Actions, Caddy, Nginx, AWS, Azure, Oracle Cloud" /></p>
 
 <!-- ═══════════════════════════ 03 · PROJECTS ═══════════════════════════ -->
 <img src="assets/h-projects.svg" width="100%" alt="03 — Featured missions" />

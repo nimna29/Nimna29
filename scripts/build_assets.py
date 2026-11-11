@@ -15,7 +15,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
 from theme import (  # noqa: E402
-    AMBER, CYAN, DIM, LINE, PINK, SOFT, TEXT, VIOLET,
+    AMBER, BLUE, CYAN, DIM, GREEN, LINE, PINK, RED, SOFT, TEAL, TEXT, VIOLET,
     esc, hud_corners, panel, stars, svg,
 )
 
@@ -40,12 +40,17 @@ CREW = [
 FUN_FACT = ["Dark mode isn't just easier on the eyes — it keeps",
             "the bugs away, because bugs are attracted to light."]
 
+# Curated from the portfolio's stack catalog (nimna-niwarthana/scripts/stackCatalog.mjs).
+# Each row must fit on one line — stack() raises if a row overflows.
 STACK = [
-    ("LANGUAGES", CYAN, ["Python", "TypeScript", "JavaScript", "C", "C#", "Dart", "SQL", "Bash"]),
-    ("AI / ML", VIOLET, ["PyTorch", "TensorFlow", "Keras", "scikit-learn", "OpenCV", "NLP", "CNNs"]),
-    ("WEB & API", PINK, ["React", "Node.js", "Express", "FastAPI", "Django", "Flutter", "PostgreSQL", "MongoDB"]),
-    ("SECURITY", AMBER, ["Pen Testing", "Malware Analysis", "Forensics", "Ghidra", "Burp Suite", "Volatility", "Nmap"]),
-    ("INFRA", CYAN, ["Docker", "Linux", "Git", "GitHub Actions", "Caddy", "Oracle Cloud", "Firebase"]),
+    ("LANGUAGES", CYAN, ["Python", "TypeScript", "JavaScript", "C", "C#", "Java", "Dart", "PHP", "SQL", "Bash"]),
+    ("AI / ML", VIOLET, ["PyTorch", "TensorFlow", "Keras", "scikit-learn", "OpenCV", "YOLO", "BERT", "spaCy", "NLTK"]),
+    ("GEN AI", BLUE, ["Anthropic API", "OpenAI API", "LangChain", "Hugging Face", "Ollama", "Claude Code"]),
+    ("WEB & API", PINK, ["React", "Next.js", "Node.js", "Express", "FastAPI", "Django", "Flutter", "Tailwind CSS"]),
+    ("DATA", GREEN, ["PostgreSQL", "MySQL", "MongoDB", "MS SQL Server", "Firebase", "pandas", "Jupyter"]),
+    ("SECURITY", AMBER, ["Burp Suite", "Metasploit", "Nmap", "Wireshark", "OWASP ZAP", "SQLmap", "BloodHound"]),
+    ("FORENSICS", RED, ["Ghidra", "IDA", "dnSpy", "Volatility", "Autopsy", "FTK Imager", "pefile", "Capstone"]),
+    ("INFRA", TEAL, ["Docker", "Linux", "Git", "GitHub Actions", "Caddy", "Nginx", "AWS", "Azure", "Oracle Cloud"]),
 ]
 
 PROJECTS = [
@@ -278,15 +283,19 @@ def about() -> str:
 # ═════════════════════════════ STACK ═════════════════════════════
 def stack() -> str:
     W, uid = 1200, "stack"
-    row, top, chip_h = 66, 30, 44
+    row, top, chip_h, x0 = 66, 30, 44, 192
+    size, gap, pad = 19, 8, 11
     H = top + row * len(STACK) + 16
     parts = []
     for i, (label, color, items) in enumerate(STACK):
+        row_w = sum(chip_w(t, size, pad) for t in items) + gap * (len(items) - 1)
+        if x0 + row_w > W - 42:
+            raise SystemExit(f"stack row {label!r} is {x0 + row_w - (W - 42):.0f} units too wide — drop a tool")
         y = top + i * row
         mid = y + chip_h / 2
         parts.append(f'<circle cx="44" cy="{mid}" r="5" fill="{color}"/>')
         parts.append(f'<text x="60" y="{mid + 6.5}" class="mono" font-size="18" font-weight="800" letter-spacing="2" fill="{color}">{esc(label)}</text>')
-        parts.append(chips(192, y, items, color, size=19, gap=8, h=chip_h, pad=11))
+        parts.append(chips(x0, y, items, color, size=size, gap=gap, h=chip_h, pad=pad))
         if i < len(STACK) - 1:
             parts.append(f'<line x1="40" y1="{y + row - 11}" x2="{W - 40}" y2="{y + row - 11}" stroke="{LINE}" stroke-dasharray="2 6"/>')
     body = panel(uid, W, H, seed=11, star_count=70) + "\n  " + "\n  ".join(parts)
