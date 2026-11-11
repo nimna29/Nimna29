@@ -27,28 +27,26 @@
 </style>
 <rect x="1" y="1" width="230" height="56" rx="12" fill="url(#b-x-bg)"/>
   <g clip-path="url(#b-x-clip)"><circle cx="172.2" cy="48.0" r="1.5" fill="#A78BFA" opacity="0.53"/>
-    <circle cx="180.4" cy="42.0" r="0.6" fill="#E6EDF3" opacity="0.82"/>
+    <circle cx="180.4" cy="42.0" r="0.6" fill="#F1F5FF" opacity="0.82"/>
     <circle cx="1.4" cy="38.3" r="1.0" fill="#22D3EE" opacity="0.66"/>
     <circle cx="128.6" cy="23.9" r="1.2" fill="#A78BFA" opacity="0.73"/>
     <circle class="tw" cx="25.2" cy="48.1" r="1.2" fill="#F472B6" style="animation-delay:3.29s;animation-duration:5.42s"/>
-    <circle cx="223.2" cy="10.1" r="0.7" fill="#E6EDF3" opacity="0.55"/>
+    <circle cx="223.2" cy="10.1" r="0.7" fill="#F1F5FF" opacity="0.55"/>
     <circle cx="205.1" cy="22.0" r="0.6" fill="#22D3EE" opacity="0.30"/>
-    <circle class="tw" cx="88.4" cy="43.1" r="1.5" fill="#E6EDF3" style="animation-delay:1.35s;animation-duration:5.88s"/>
-    <circle class="tw" cx="182.6" cy="24.6" r="1.2" fill="#E6EDF3" style="animation-delay:3.79s;animation-duration:4.77s"/>
-    <circle cx="50.7" cy="43.6" r="0.7" fill="#E6EDF3" opacity="0.69"/>
+    <circle class="tw" cx="88.4" cy="43.1" r="1.5" fill="#F1F5FF" style="animation-delay:1.35s;animation-duration:5.88s"/>
+    <circle class="tw" cx="182.6" cy="24.6" r="1.2" fill="#F1F5FF" style="animation-delay:3.79s;animation-duration:4.77s"/>
+    <circle cx="50.7" cy="43.6" r="0.7" fill="#F1F5FF" opacity="0.69"/>
     <circle class="tw" cx="217.0" cy="19.0" r="0.5" fill="#22D3EE" style="animation-delay:1.47s;animation-duration:3.65s"/>
-    <circle cx="36.7" cy="27.1" r="0.8" fill="#A78BFA" opacity="0.33"/>
-    <circle cx="141.4" cy="42.0" r="1.5" fill="#E6EDF3" opacity="0.53"/>
-    <circle cx="125.2" cy="25.0" r="1.0" fill="#F472B6" opacity="0.85"/></g>
-  <rect x="1" y="1" width="230" height="56" rx="12" fill="none" stroke="#F472B6" stroke-opacity=".55" stroke-width="1.5"/>
+    <circle cx="36.7" cy="27.1" r="0.8" fill="#A78BFA" opacity="0.33"/></g>
+  <rect x="1" y="1" width="230" height="56" rx="12" fill="none" stroke="#F472B6" stroke-opacity=".8" stroke-width="1.6"/>
   <g fill="none" stroke="#F472B6" stroke-width="1.4" stroke-linecap="square">
     <path d="M5 13 V5 H13"/>
     <path d="M219 5 H227 V13"/>
     <path d="M227 45 V53 H219"/>
     <path d="M13 53 H5 V45"/>
   </g>
-  <circle cx="33" cy="29.0" r="19" fill="#F472B6" fill-opacity=".12" stroke="#F472B6" stroke-opacity=".5"/>
-  <g transform="translate(21,17.0)"><path d="M4 3.5h4.5L20 20.5h-4.5z" stroke="#F472B6" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 3.5l-6.3 7.1M4.5 20.5l6.3-7.1" stroke="#F472B6" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
-  <text x="62" y="26" class="mono" font-size="13.5" font-weight="700" letter-spacing="1.5" fill="#E6EDF3">X / TWITTER</text>
-  <text x="62" y="44" class="mono" font-size="11.5" fill="#8B9BC4">@niwarthananimna</text>
+  <circle cx="30" cy="29.0" r="18" fill="#F472B6" fill-opacity=".16" stroke="#F472B6" stroke-opacity=".7"/>
+  <g transform="translate(18,17.0)"><path d="M4 3.5h4.5L20 20.5h-4.5z" stroke="#F472B6" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 3.5l-6.3 7.1M4.5 20.5l6.3-7.1" stroke="#F472B6" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="57" y="26" class="mono" font-size="15.5" font-weight="800" letter-spacing="1" fill="#F1F5FF">X / TWITTER</text>
+  <text x="57" y="45" class="mono" font-size="13" font-weight="600" fill="#F472B6">@niwarthananimna</text>
 </svg>

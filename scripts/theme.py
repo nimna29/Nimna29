@@ -12,9 +12,11 @@ CYAN = "#22D3EE"
 VIOLET = "#A78BFA"
 PINK = "#F472B6"
 AMBER = "#FBBF24"
-TEXT = "#E6EDF3"
-MUTED = "#8B9BC4"
-DIM = "#5B6894"
+GREEN = "#34D399"
+TEXT = "#F1F5FF"   # primary copy — always bright
+SOFT = "#C3CEF0"   # secondary copy — still high contrast on the panels
+MUTED = "#8B9BC4"  # decoration only (never body text)
+DIM = "#5B6894"    # decoration only (lines, orbits)
 
 MONO = "'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Liberation Mono','DejaVu Sans Mono',monospace"
 SANS = "'Segoe UI','Inter',Ubuntu,'Helvetica Neue',Arial,'DejaVu Sans',sans-serif"
@@ -101,9 +103,11 @@ def panel(uid: str, w: int, h: int, seed: int, star_count: int = 60, nebula: boo
   {hud_corners(8, 8, w - 16, h - 16, 14, CYAN, 1.6)}"""
 
 
-def svg(w: int, h: int, uid: str, body: str, extra_css: str = "", title: str = "") -> str:
+def svg(w: int, h: int, uid: str, body: str, extra_css: str = "", title: str = "", pad_top: int = 0) -> str:
+    """`pad_top` adds transparent space above the artwork — used by section
+    headers so the README gets a consistent, compact gap between sections."""
     t = f"<title>{esc(title)}</title>" if title else ""
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h + pad_top}" viewBox="0 {-pad_top} {w} {h + pad_top}" role="img">
 {t}
 <defs>{defs(uid)}
   <clipPath id="{uid}-clip"><rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="14"/></clipPath>

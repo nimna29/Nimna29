@@ -30,5 +30,5 @@
   <line x1="40" y1="15" x2="1160" y2="15" stroke="url(#div-l)" stroke-width="1.5"/>
   <circle cx="600.0" cy="15" r="6" fill="#A78BFA"/>
   <ellipse cx="600.0" cy="15" rx="15" ry="4" fill="none" stroke="#22D3EE" stroke-width="1.5" transform="rotate(-15 600.0 15)"/>
-  <circle class="tw" cx="540.0" cy="15" r="2" fill="#E6EDF3"/><circle class="tw" cx="660.0" cy="15" r="2" fill="#E6EDF3" style="animation-delay:1.5s"/>
+  <circle class="tw" cx="540.0" cy="15" r="2" fill="#F1F5FF"/><circle class="tw" cx="660.0" cy="15" r="2" fill="#F1F5FF" style="animation-delay:1.5s"/>
 </svg>
