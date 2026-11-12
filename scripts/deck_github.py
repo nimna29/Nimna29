@@ -43,6 +43,7 @@ query($login: String!, $after: String) {
       pageInfo { hasNextPage endCursor }
       nodes {
         isFork
+        isPrivate
         stargazerCount
         languages(first: 12, orderBy: {field: SIZE, direction: DESC}) {
           edges { size node { name color } }
@@ -106,6 +107,9 @@ def fetch(token: str, login: str) -> dict:
         "days": dict(sorted(days.items())),
         "langs": langs,
         "since": start.year,
+        # Private repos are only visible to a token of the account itself (METRICS_TOKEN),
+        # so seeing one proves the numbers include private work.
+        "private": any(r["isPrivate"] for r in repos),
     }
 
 
@@ -120,7 +124,7 @@ def mock() -> dict:
     for i in range(9):
         days[(today - dt.timedelta(days=i)).isoformat()] = rnd.randint(1, 6)
     return {"stars": 48, "repos": 31, "followers": 57, "prs": 64, "issues": 19, "contributed": 12,
-            "days": days, "since": 2020,
+            "days": days, "since": 2020, "private": True,
             "langs": {"Python": {"size": 900, "color": "#3572A5"}, "TypeScript": {"size": 640, "color": "#3178c6"},
                       "JavaScript": {"size": 380, "color": "#f1e05a"}, "C#": {"size": 160, "color": "#178600"},
                       "Dart": {"size": 120, "color": "#00B4AB"}, "Shell": {"size": 50, "color": "#89e051"}}}

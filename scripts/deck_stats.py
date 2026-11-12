@@ -39,7 +39,9 @@ def stats_card(d):
     nw = tw(txt, size, "display")
     o += TP(48, oy + 150, size, txt, fill=lin([(0, TEXT), (.5, TEXT), (1, GOLD)]))
     o += f'<path d="M40 {oy + 70} h-10 v100 h10 M{56 + nw:.1f} {oy + 70} h10 v100 h-10" fill="none" stroke="{ELECTRIC}" stroke-opacity=".6" stroke-width="1.5"/>'
-    o += T(32, oy + 204, 17, f"since {d['since']} · weekly activity below", "ui4", MUTED)
+    # Only claims private work when the data really contains it (see deck_github.py)
+    scope = "private repos included" if d.get("private") else "weekly activity below"
+    o += T(32, oy + 204, 17, f"since {d['since']} · {scope}", "ui4", MUTED)
     vals = list(d["days"].values())[-245:]
     weeks = [sum(vals[i:i + 7]) for i in range(0, len(vals), 7)] or [0]
     mx = max(weeks) or 1
