@@ -1,96 +1,60 @@
-<img align="right" src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnimna29&labelColor=%23697689&countColor=%232ccce4&style=flat" />
-
-<h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Kanit&weight=600&size=36&color=1091F7&center=true&vCenter=true&width=500&height=70&duration=4000&lines=😎+Hello+World!+👋;+I'm+Nimna+Niwarthana;" />
-</h1>
-
-<h3 align="center">Software Engineer | AI/ML Developer | Cyber Security Enthusiast | BSc (Hons) Computer Security</h3>
-<br>
-
 <div align="center">
 
-🔭 I’m currently working on **a ML Project**
+<!--
+  OBSERVATION DECK design.
+  Static art:  edit scripts/deck_content.py, then run  python scripts/deck_assets.py
+  Live cards:  built every 12h by .github/workflows/main.yml -> `telemetry` branch
+-->
 
-🌱 I’m currently learning **Cyber Security, AI/ML, Backend Development, Web Development, Cloud Platforms**
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<p><a href="https://nimna-niwarthana.com"><img src="assets/deck/hero.svg" width="100%" alt="Nimna Niwarthana - Software Engineer · AI/ML Developer · Cybersecurity Specialist. I build secure software, train models and take malware apart." /></a></p>
 
-💬 Ask me about **Python, AI/ML, React, Web Development, IoT, Automation, Cyber Security, Cloud Platforms, and more tech stuff**
+<p>
+<a href="https://nimna-niwarthana.com"><img src="assets/deck/link-portfolio.svg" width="25%" alt="Portfolio - nimna-niwarthana.com" /></a><a href="https://www.linkedin.com/in/nimna-niwarthana"><img src="assets/deck/link-linkedin.svg" width="25%" alt="LinkedIn - in/nimna-niwarthana" /></a><a href="https://twitter.com/niwarthananimna"><img src="assets/deck/link-x.svg" width="25%" alt="X / Twitter - @niwarthananimna" /></a><a href="https://www.buymeacoffee.com/nimna"><img src="assets/deck/link-coffee.svg" width="25%" alt="Buy me a coffee" /></a>
+</p>
 
-⚡ Fun fact **Dark mode not only eases eye strain in low light but also deters bugs, as they are attracted to light**
+<!-- ═══════════════════════════ LIVE STATS ═══════════════════════════ -->
+<p><img src="https://raw.githubusercontent.com/nimna29/Nimna29/telemetry/deck-stats.svg" width="100%" alt="GitHub stats - lifetime contributions, pull requests, issues, stars, repositories, followers" /></p>
+
+<p><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fnimna29&label=VISITORS%20ON%20DECK&labelColor=%2308142C&countColor=%234DB8FF&style=for-the-badge" alt="Profile visitors" /></p>
+
+<!-- ═══════════════════════════ CREW PROFILE ═══════════════════════════ -->
+<p><a href="https://nimna-niwarthana.com/#/about"><img src="assets/deck/crew.svg" width="100%" alt="Crew profile - Nimna Niwarthana. Education: MSc Ethical Hacking and Cybersecurity, Abertay University (2025 - 2026); BSc (Hons) Computer Security, University of Plymouth and NSBM (2020 - 2023). Currently building Catalogie. 3+ years across ML, software engineering and full-stack. Passionate about AI/ML, cybersecurity, full-stack development and data science. Fun fact: dark mode isn't just easier on the eyes - it keeps the bugs away, because bugs are attracted to light." /></a></p>
+
+<!-- ═══════════════════════════ FEATURED WORK ═══════════════════════════ -->
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/deck/h-work-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/deck/h-work-light.svg" />
+  <img src="assets/deck/h-work-dark.svg" width="100%" alt="Featured Work" />
+</picture></p>
+
+<p>
+<a href="https://catalogie.com/"><img src="assets/deck/project-catalogie.svg" width="50%" alt="Catalogie - one library for films, TV, games and books" /></a><a href="https://github.com/nimna29/malditectist-webapp-heroku"><img src="assets/deck/project-malditectist.svg" width="50%" alt="MalDitectist - ensemble ML malware detection" /></a><a href="https://github.com/nimna29/malscraper"><img src="assets/deck/project-malscraper.svg" width="50%" alt="MalScraper - PE and opcode dataset builder" /></a><a href="https://nimna-niwarthana.com/#/projects"><img src="assets/deck/project-agenttesla.svg" width="50%" alt="AgentTesla malware analysis" /></a>
+</p>
+
+<!-- ═══════════════════════════ FLIGHT ACTIVITY ═══════════════════════════ -->
+<!-- Generated every 12h by .github/workflows/main.yml -> published to the `telemetry` branch -->
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/deck/h-activity-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/deck/h-activity-light.svg" />
+  <img src="assets/deck/h-activity-dark.svg" width="100%" alt="Flight Activity" />
+</picture></p>
+
+<p>
+<img src="https://raw.githubusercontent.com/nimna29/Nimna29/telemetry/deck-activity.svg" width="100%" alt="Contribution streak and top languages" />
+<img src="https://raw.githubusercontent.com/nimna29/Nimna29/telemetry/deck-snake.svg" width="100%" alt="Snake eating my contribution graph" />
+</p>
+
+<!-- ═══════════════════════════ TECH ARSENAL ═══════════════════════════ -->
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/deck/h-arsenal-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/deck/h-arsenal-light.svg" />
+  <img src="assets/deck/h-arsenal-dark.svg" width="100%" alt="Tech Arsenal" />
+</picture></p>
+
+<p><img src="assets/deck/arsenal.svg" width="100%" alt="Tech arsenal - Languages: Python, TypeScript, JavaScript, C, C#, Java, Dart, PHP · Web and API: React, Next.js, Vue, Node.js, Express, FastAPI, Django, Flutter, Tailwind CSS, Bootstrap, Vite, Jest, HTML5, CSS3, REST API, Keycloak · AI/ML: PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, YOLO, Hugging Face, spaCy, pandas, Jupyter, Google Colab, Vertex AI, LM Studio, BERT, NLTK, Matplotlib · Gen AI and agents: Anthropic API, OpenAI API, Claude Code, LangChain, Ollama, GitHub Copilot, Cursor, Gemini · Data, cloud and DevOps: PostgreSQL, MySQL, MongoDB, Firebase, Oracle, MS SQL Server, Docker, GitHub Actions, AWS, Google Cloud, Azure, Heroku, Vercel, Nginx, Ubuntu, Git · Offensive security: Kali Linux, Parrot OS, Burp Suite, Metasploit, OWASP ZAP, Wireshark, Hashcat, Hack The Box, TryHackMe, Nmap, SQLmap, Hydra, BloodHound, John the Ripper, Gobuster, Aircrack-ng · Defence and forensics: Snort, pfSense, Packet Tracer, Ghidra, IDA, Volatility, Autopsy, FTK Imager · Tooling: GitHub, VS Code, Bash, Postman, Jira, Figma, IntelliJ IDEA, Android Studio" /></p>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<p><a href="https://nimna-niwarthana.com"><img src="assets/deck/footer.svg" width="100%" alt="Thanks for stopping by the deck - visit nimna-niwarthana.com" /></a></p>
 
 </div>
-<br>
-
-<div align="center"> 
-    <img width="92%" src="https://github.com/nimna29/Nimna29/assets/77341013/eb688b76-0f7d-436e-8fe2-3869f839c756" />
-</div>
-
-<br>
-
-<a href="https://www.youtube.com/watch?v=rcd_SQZDlnk"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
-
-<h2 align="center">👨‍💻 Connect with me 📲</h2>
-<div align="center"> 
-  <a href="https://www.linkedin.com/in/nimna-niwarthana">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-    
-  <a href="https://twitter.com/niwarthananimna">
-    <img src="https://img.shields.io/badge/Twitter-black?style=for-the-badge&logo=X" />
-  </a>
-  
-  <a href="https://nimna29.github.io/nimna-niwarthana">
-     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&color=0384fc&logo=todoist&logoColor=white"/>
-  </a>
-</div>
-
-<br>
-
-<div align="center">
-    <a href="https://www.buymeacoffee.com/nimna"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="34" width="130" alt="buymeacoffee.com/nimna" /></a><br>
-</div>
-
-<br>
-
-
-<h2 align="center">⚒️ Languages and Tools ⚙️</h2>
-<div align="center">
-    <img src="https://skillicons.dev/icons?i=py,typescript,javascript,c,cs,bash,html,css,php,arduino,dart&theme=dark" />
-    <img src="https://skillicons.dev/icons?i=fastapi,django,react,nodejs,flutter,firebase,mongodb,heroku,anaconda,docker&theme=dark" />
-    <img src="https://skillicons.dev/icons?i=linux,tensorflow,sklearn,opencv,pytorch,git,vscode,vim,wordpress,figma,ps,ai&theme=dark" />
-</div>
-<br>
-
-<h2 align="center">🔥 My Stats ⚡</h2>
-<div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nimna29&langs_count=8&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&card_width=380px" alt="nimna29"/>
-</div>
-<br>
-
-<div align="center">
-    <img align="center" src="https://github-readme-stats.vercel.app/api?username=nimna29&show_icons=true&theme=tokyonight&hide_border=true" alt="nimna29" />
-</div>
-<br>
-
-
-<a href="https://www.youtube.com/watch?v=lfucQM07tGQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
-
-
-<h2 align="center">👨‍💻 My Contributions 🌏</h2>
-
-<div align="center">
-    <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nimna29&show_icons=true&theme=tokyonight&hide_border=true" alt="nimna29" />
-</div>
-
-<div align="center">
-    <h2></h2>
-    <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/nimna29/Nimna29/output/github-contribution-grid-snake-dark.svg" />
-    <h2></h2>
-</div>
-
-<br>
-<div align="center">
-    <img src="https://github-profile-trophy.vercel.app/?username=nimna29&theme=tokyonight&margin-h=15&margin-w=5&no-bg=true" alt="nimna29" />
-</div>
-<br>
-
-<a href="https://www.youtube.com/watch?v=cpraXaw7dyc"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/></a>
