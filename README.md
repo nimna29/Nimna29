@@ -21,15 +21,6 @@
 <!-- ═══════════════════════════ CREW PROFILE ═══════════════════════════ -->
 <p><a href="https://nimna-niwarthana.com/#/about"><img src="assets/deck/crew.svg" width="100%" alt="Crew profile - Nimna Niwarthana. Education: MSc Ethical Hacking and Cybersecurity, Abertay University (2025 - 2026); BSc (Hons) Computer Security, University of Plymouth and NSBM (2020 - 2023). Currently building Catalogie. 3+ years across ML, software engineering and full-stack. Passionate about AI/ML, cybersecurity, full-stack development and data science. Fun fact: dark mode isn't just easier on the eyes - it keeps the bugs away, because bugs are attracted to light." /></a></p>
 
-<!-- ═══════════════════════════ TECH ARSENAL ═══════════════════════════ -->
-<p><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/deck/h-arsenal-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/deck/h-arsenal-light.svg" />
-  <img src="assets/deck/h-arsenal-dark.svg" width="100%" alt="Tech Arsenal" />
-</picture></p>
-
-<p><img src="assets/deck/arsenal.svg" width="100%" alt="Tech arsenal - Languages: Python, TypeScript, JavaScript, C, C#, Java, Dart, PHP · Web and API: React, Next.js, Vue, Node.js, Express, FastAPI, Django, Flutter, Tailwind CSS, Bootstrap, Vite, Jest, HTML5, CSS3, REST API, Keycloak · AI/ML: PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, YOLO, Hugging Face, spaCy, pandas, Jupyter, Google Colab, Vertex AI, LM Studio, BERT, NLTK, Matplotlib · Gen AI and agents: Anthropic API, OpenAI API, Claude Code, LangChain, Ollama, GitHub Copilot, Cursor, Gemini · Data, cloud and DevOps: PostgreSQL, MySQL, MongoDB, Firebase, Oracle, MS SQL Server, Docker, GitHub Actions, AWS, Google Cloud, Azure, Heroku, Vercel, Nginx, Ubuntu, Git · Offensive security: Kali Linux, Parrot OS, Burp Suite, Metasploit, OWASP ZAP, Wireshark, Hashcat, Hack The Box, TryHackMe, Nmap, SQLmap, Hydra, BloodHound, John the Ripper, Gobuster, Aircrack-ng · Defence and forensics: Snort, pfSense, Packet Tracer, Ghidra, IDA, Volatility, Autopsy, FTK Imager · Tooling: GitHub, VS Code, Bash, Postman, Jira, Figma, IntelliJ IDEA, Android Studio" /></p>
-
 <!-- ═══════════════════════════ FEATURED WORK ═══════════════════════════ -->
 <p><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/deck/h-work-dark.svg" />
@@ -53,6 +44,15 @@
 <img src="https://raw.githubusercontent.com/nimna29/Nimna29/telemetry/deck-activity.svg" width="100%" alt="Contribution streak and top languages" />
 <img src="https://raw.githubusercontent.com/nimna29/Nimna29/telemetry/deck-snake.svg" width="100%" alt="Snake eating my contribution graph" />
 </p>
+
+<!-- ═══════════════════════════ TECH ARSENAL ═══════════════════════════ -->
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/deck/h-arsenal-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/deck/h-arsenal-light.svg" />
+  <img src="assets/deck/h-arsenal-dark.svg" width="100%" alt="Tech Arsenal" />
+</picture></p>
+
+<p><img src="assets/deck/arsenal.svg" width="100%" alt="Tech arsenal - Languages: Python, TypeScript, JavaScript, C, C#, Java, Dart, PHP · Web and API: React, Next.js, Vue, Node.js, Express, FastAPI, Django, Flutter, Tailwind CSS, Bootstrap, Vite, Jest, HTML5, CSS3, REST API, Keycloak · AI/ML: PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, YOLO, Hugging Face, spaCy, pandas, Jupyter, Google Colab, Vertex AI, LM Studio, BERT, NLTK, Matplotlib · Gen AI and agents: Anthropic API, OpenAI API, Claude Code, LangChain, Ollama, GitHub Copilot, Cursor, Gemini · Data, cloud and DevOps: PostgreSQL, MySQL, MongoDB, Firebase, Oracle, MS SQL Server, Docker, GitHub Actions, AWS, Google Cloud, Azure, Heroku, Vercel, Nginx, Ubuntu, Git · Offensive security: Kali Linux, Parrot OS, Burp Suite, Metasploit, OWASP ZAP, Wireshark, Hashcat, Hack The Box, TryHackMe, Nmap, SQLmap, Hydra, BloodHound, John the Ripper, Gobuster, Aircrack-ng · Defence and forensics: Snort, pfSense, Packet Tracer, Ghidra, IDA, Volatility, Autopsy, FTK Imager · Tooling: GitHub, VS Code, Bash, Postman, Jira, Figma, IntelliJ IDEA, Android Studio" /></p>
 
 <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
 <p><a href="https://nimna-niwarthana.com"><img src="assets/deck/footer.svg" width="100%" alt="Thanks for stopping by the deck - visit nimna-niwarthana.com" /></a></p>
