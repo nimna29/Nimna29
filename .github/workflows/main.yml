@@ -1,4 +1,4 @@
-# Builds the live profile telemetry (stats, languages, streak) and the
+# Builds the live profile telemetry (stats, streak, languages) and the
 # contribution snake, then publishes everything to the `telemetry` branch that
 # README.md reads images from.
 #
@@ -37,28 +37,20 @@ jobs:
       - name: Generate telemetry cards
         env:
           GH_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-        run: python3 scripts/build_stats.py --user "${{ github.repository_owner }}" --out dist
-
-      # Observation Deck design (README.deck.md): same data, deck styling.
-      - name: Generate deck telemetry cards
-        env:
-          GH_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
         run: python3 scripts/deck_stats.py --user "${{ github.repository_owner }}" --out dist
 
-      # Dot ramp: empty → deep blue → blue → indigo → violet. Cyan snake on dark,
-      # teal-blue snake on light. No pinks.
+      # Raw snake only - deck_snake.py re-themes it to the deck palette below.
       - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#0E7490&color_dots=#ebedf0,#bfdbfe,#60a5fa,#4f46e5,#4c1d95
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#22D3EE&color_dots=#161b33,#1e3a8a,#2563eb,#6366f1,#a78bfa
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Re-themes the dark snake and mounts it in a deck panel. Writes a
-      # placeholder panel instead if the snake step produced nothing.
+      # Re-themes the snake and mounts it in a deck panel. Writes a placeholder
+      # panel instead if the snake step produced nothing.
       - name: Mount the snake in a deck panel
         if: always()
         run: python3 scripts/deck_snake.py dist/github-contribution-grid-snake-dark.svg dist/deck-snake.svg

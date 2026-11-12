@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Live telemetry cards for the Observation Deck README design.
 
-Reuses the GitHub GraphQL fetch from build_stats.py and writes:
+Data comes from deck_github.py (GitHub GraphQL). Writes:
   deck-stats.svg     lifetime contributions + six counters
   deck-activity.svg  streak ring + top languages
 
@@ -16,7 +16,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from build_stats import fetch, fmt_date, k, mock, streaks  # noqa: E402
+from deck_github import fetch, fmt_date, k, mock, streaks  # noqa: E402
 from deck_kit import (  # noqa: E402
     ELECTRIC, FAINT, GOLD, MUTED, TEXT, M, T, TP, arc, frame, lin, plate, rr, svg, tw, write,
 )

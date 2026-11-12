@@ -335,4 +335,8 @@ def write(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write(content)
-    print(f"  wrote {os.path.relpath(path, ROOT).replace(os.sep, '/')}  ({len(content.encode()) / 1024:.1f} KB)")
+    try:
+        shown = os.path.relpath(path, ROOT).replace(os.sep, "/")
+    except ValueError:  # Windows: output on another drive than the repo
+        shown = path
+    print(f"  wrote {shown}  ({len(content.encode()) / 1024:.1f} KB)")
